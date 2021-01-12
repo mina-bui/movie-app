@@ -9,10 +9,10 @@ function Nav() {
                 <NavLink to={'/'}>Home</NavLink>
             </li>
             <li>
-                <NavLink to={'/about'}>About</NavLink>
+                <NavLink to={'/favourites'}>Favourites</NavLink>
             </li>
             <li>
-                <NavLink to={'/favourites'}>Favourites</NavLink>
+                <NavLink to={'/about'}>About</NavLink>
             </li>
         </ul>
     </nav>

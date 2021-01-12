@@ -1,15 +1,15 @@
 // Header Stylization 
 
 header {
-    background-color: $lightBlue;
+    background-color: $green;
     
     h1 {
-        @include flatten;    
+        //@include flatten;    
     }
     
     a {
         text-decoration: none;
-        color: $light;
+        color: $green;
     }
 
     .header-row-01 {

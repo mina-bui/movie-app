@@ -1,14 +1,14 @@
-// Header Stylization 
+// Header Stylization
 
 header {
     background-color: $darkLilac;
     display: flex;
     height: 150px;
-    
+
     h1 {
-        @include flatten;    
+        @include flatten;
     }
-    
+
     a {
         text-decoration: uppercase;
         color: $green;
@@ -27,7 +27,6 @@ header {
         width: 200px;
     }
 
-
     .btn-main-nav {
         display: none;
     }
@@ -36,10 +35,39 @@ header {
         //display: none;
     }
 
-    @include mq(em(600)){
+    @include mq(em(600)) {
         .header-row-01 {
             padding: em(20);
         }
     }
+}
 
+// Desktop Version
+@media only screen and (min-width: $tablet) {
+    // About Page - Desktop Version
+
+    // Favourites Page - Desktop Version
+
+    // Footer Page - Desktop Version
+
+    // Header - Desktop Version
+
+    // Home Page - Desktop Version
+
+    // Single Movie Page - Desktop Version
+}
+
+// Tablet Version
+@media only screen and (min-width: $mobile) {
+    // About Page - Tablet Version
+
+    // Favourites Page - Tablet Version
+
+    // Footer Page - Tablet Version
+
+    // Header - Tablet Version
+
+    // Home Page - Tablet Version
+
+    // Single Movie Page - Tablet Version
 }

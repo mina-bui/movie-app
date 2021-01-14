@@ -16,8 +16,8 @@ function About() {
         interest you, go ahead and add them to your Favorites.
       </p>
       <p>
-          This product uses the TMDb API but is not endorsed or certified by TMDb.
-           For educational purposes only.
+        This product uses the TMDb API but is not endorsed or certified by TMDb.
+        For educational purposes only.
       </p>
     </main>
   );

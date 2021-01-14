@@ -11,3 +11,33 @@
     }
     //@include mc;
 }
+
+// Desktop Version
+@media only screen and (min-width: $tablet) {
+    // About Page - Desktop Version
+
+    // Favourites Page - Desktop Version
+
+    // Footer Page - Desktop Version
+
+    // Header - Desktop Version
+
+    // Home Page - Desktop Version
+
+    // Single Movie Page - Desktop Version
+}
+
+// Tablet Version
+@media only screen and (min-width: $mobile) {
+    // About Page - Tablet Version
+
+    // Favourites Page - Tablet Version
+
+    // Footer Page - Tablet Version
+
+    // Header - Tablet Version
+
+    // Home Page - Tablet Version
+
+    // Single Movie Page - Tablet Version
+}

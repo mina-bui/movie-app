@@ -7,6 +7,7 @@ p {
     color: $lilac;
     line-height: 2.2;
     font-weight: 400;
+    font-size: 1.3em;
 }
 
 h2, h3, h4, h5, h6 {
@@ -25,6 +26,7 @@ h2 {
     color: $green;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
 }
 .go-back:active,
 .go-back:hover {
@@ -52,7 +54,20 @@ h2 {
     padding: 20px 0px 40px 0px;
 }
 
-// About Page - Desktop Version
+// Desktop Version
 @media only screen and (min-width: $tablet) {
+    main {
+        margin: 1% 15% 0px 30%;
+    }
+    p {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
     
+    // About Page - Desktop Version
+    .about-main p:nth-child(5) {
+        padding-top: 150px;
+    }
 }

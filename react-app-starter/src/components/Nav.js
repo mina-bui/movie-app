@@ -14,6 +14,9 @@ function Nav() {
             <li>
                 <NavLink to={'/about'}>About</NavLink>
             </li>
+            <li>
+                <NavLink to={'/single-movie'}>Single Movie</NavLink>
+            </li>
         </ul>
     </nav>
   );

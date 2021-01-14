@@ -2,9 +2,10 @@
 
 main {
     padding: $section-padding;
+    font-family: $regularFont;
 }
 p {
-    color: $lilac;
+    color: $bodyFont;
     line-height: 2.2;
     font-weight: 400;
     font-size: 1.3em;
@@ -18,7 +19,7 @@ h6 {
     font-family: $regularFont;
     color: $green;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
 }
 h2 {
     font-size: 2em;
@@ -42,13 +43,13 @@ h2 {
 
 .about-main {
     padding: 5px 25px 100px 25px;
-    font-family: $regularFont;
 }
 
 .about-main p {
     text-align: center;
+    color: $lilac;
 }
-.about-main p:nth-child(5) {
+.about-main p:nth-child(4) {
     color: $green;
     font-style: italic;
     padding-top: 250px;
@@ -56,6 +57,43 @@ h2 {
 .about-main h2 {
     text-align: center;
     padding: 20px 0px 40px 0px;
+}
+
+// Single Movie Page
+
+.singlemovie-main {
+    padding: 20px 50px 50px 50px;
+}
+
+.singlemovie-main p {
+    font-size: 1em;
+    line-height: 1.75;
+}
+.singlemovie-main p:nth-child(4) {
+    color: $green;
+    text-transform: uppercase;
+}
+.singlemovie-main h2 {
+    font-size: 1.75em;
+    padding: 0px 0px 0px 0px;
+}
+.singlemovie-main h3 {
+    font-size: 1.50em;
+    font-weight: 400;
+    padding: 15px 0px 15px 0px;
+}
+.singlemovie-poster-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.singlemovie-main span {
+    color: $bodyFont;
+    font-size: 0.8em;
+    padding: 10px 5px 10px 5px;
+    margin: 35px;
+    border: 3px solid $green;
 }
 
 // Desktop Version

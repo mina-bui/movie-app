@@ -2,32 +2,24 @@
 
 function SingleMovie() {
   return (
-    <main>
+    <main class="singlemovie-main">
+      <a href="#0" class="go-back">&#5176; Back</a>
       <section>
-        <h2>Single Movie Page</h2>
+        <div class="singlemovie-poster-container">
+          <img src="https://www.insidethekraken.com/wp-content/uploads/2018/10/Memories-of-Murder-poster.jpg"></img>
+        </div>
+        <h2>Memories of Murder</h2>
         <section>
-          <p>
-            Release Date:
-            </p>
-          <p>
-            Release Date:
-            </p>
-          <p>
-            Release Date:
-            </p>
-          <span>Rating:</span>
-          <div>81%</div>
+          <p>Release Date: 10/19/2020</p>
+          <p>Crime, Drama, Thriller</p>
+          <p>Runtime: 2H1 11M</p>
+          <p>Rating: <span>81%</span></p>
         </section>
         <section>
           <h3>Overview</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            In 1986, Park (Song Kang-ho) and Cho (Kim Roi-ha) are two simple-minded detectives assigned to a double murder investigation in a South Korean province. But when the murderer strikes several more times with the same pattern, the detectives realize that they are chasing the country's first documented serial killer. Relying on only their basic skills and tools, Park and Jo attempt to piece together the clues and solve the case in this thriller based on true events.
+          </p>
         </section>
       </section>
     </main>

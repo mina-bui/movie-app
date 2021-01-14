@@ -23,11 +23,11 @@ function Header() {
 				<Nav />
 			</div>
 
-			<div className="header-genre">
-				<div className="header-genre popular">
-					
-				</div>
+			<div className="header-form-select">
+				<ul>
+					<li className="form-select popular">Popular</li>
 
+				</ul>
 			</div>
 
 

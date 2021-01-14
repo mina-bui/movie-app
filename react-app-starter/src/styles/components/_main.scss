@@ -3,3 +3,34 @@
 main {
     padding: $section-padding;
 }
+
+.about-main {
+    font-family: $regularFont;
+}
+
+// Go Back Link
+
+.go-back {
+    color: $green;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.go-back:active,
+.go-back:hover {
+    color: $green;
+    text-transform: uppercase;
+}
+
+// About Page
+
+.about-main p {
+    color: $lilac;
+}
+.about-main p:nth-child(5) {
+    color: $green;
+    text-transform: italic;
+}
+.about-main h2 {
+    color: $green;
+    text-transform: uppercase;
+}

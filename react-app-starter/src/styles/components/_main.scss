@@ -3,9 +3,18 @@
 main {
     padding: $section-padding;
 }
+p {
+    color: $lilac;
+    line-height: 2.2;
+}
 
-.about-main {
+h2, h3, h4, h5, h6 {
     font-family: $regularFont;
+    color: $green;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2em;
 }
 
 // Go Back Link
@@ -23,14 +32,20 @@ main {
 
 // About Page
 
+.about-main {
+    padding: 5px 25px 100px 25px;
+    font-family: $regularFont;
+}
+
 .about-main p {
-    color: $lilac;
+    text-align: center;
 }
 .about-main p:nth-child(5) {
     color: $green;
-    text-transform: italic;
+    font-style: italic;
+    padding-top: 250px;
 }
 .about-main h2 {
-    color: $green;
-    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0px 40px 0px;
 }

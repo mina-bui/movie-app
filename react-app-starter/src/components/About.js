@@ -17,8 +17,7 @@ function About() {
       </p>
       <p>
           This product uses the TMDb API but is not endorsed or certified by TMDb.
-          <br></br>
-          For educational purposes only.
+           For educational purposes only.
       </p>
     </main>
   );

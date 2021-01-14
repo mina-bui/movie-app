@@ -25,8 +25,18 @@ function Header() {
 
 			<div className="header-form-select">
 				<ul>
-					<li className="form-select popular">Popular</li>
-
+					<li className="form-select popular">
+						<a href="#">Popular</a>
+					</li>
+					<li className="form-select popular">
+						<a href="#">Top Rated</a>
+					</li>
+					<li className="form-select popular">
+						<a href="#">Upcoming</a>
+					</li>
+					<li className="form-select popular">
+						<a href="#">Now Playing</a>
+					</li>
 				</ul>
 			</div>
 

@@ -19,6 +19,14 @@ footer {
 
 */
 
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
 // Desktop Version
 @media only screen and (min-width: $tablet) {
     // About Page - Desktop Version

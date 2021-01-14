@@ -10,7 +10,6 @@ p {
     font-weight: 400;
     font-size: 1.3em;
 }
-
 h2,
 h3,
 h4,
@@ -44,7 +43,6 @@ h2 {
 .about-main {
     padding: 5px 25px 100px 25px;
 }
-
 .about-main p {
     text-align: center;
     color: $lilac;
@@ -64,12 +62,11 @@ h2 {
 .singlemovie-main {
     padding: 20px 50px 50px 50px;
 }
-
 .singlemovie-main p {
     font-size: 1em;
     line-height: 1.75;
 }
-.singlemovie-main p:nth-child(4) {
+.singlemovie-rating {
     color: $green;
     text-transform: uppercase;
 }
@@ -87,6 +84,20 @@ h2 {
     width: 100%;
     margin: 0 auto;
     padding-top: 30px;
+}
+.singlemovie-poster-container p {
+    // "watch trailer" => disappears in mobile mode
+    display: none;
+    text-align: center;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    background-color: $lilac;
+    color: $green;
+    padding: 10px;
+}
+.singlemovie-desktop-tabs {
+    // "media" and "related movies" disappears in mobile mode
+    display: none;
 }
 .singlemovie-main span {
     color: $bodyFont;
@@ -121,6 +132,40 @@ h2 {
     // Home Page - Desktop Version
 
     // Single Movie Page - Desktop Version
+    .singlemovie-main h2 {
+        font-size: 2.3em;
+    }
+    .singlemovie-rating {
+        text-transform: none;
+        color: $bodyFont;
+    }
+    .singlemovie-main span:nth-child(1) {
+        color: $green;
+    }
+    .singlemovie-poster-container {
+        height: 100%;
+        width: 40%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .singlemovie-poster-container p {
+        display: block;
+    }
+    .singlemovie-desktop-tabs {
+        display: block;
+    }
+    .singlemovie-desktop-tabs-img {
+        display: flex;
+        height: 100%;
+        width: 15%;
+    }
+    .singlemovie-desktop-tabs-img img {
+        margin: 35px 35px;
+    }
+    .singlemovie-desktop-tabs h3 {
+        padding: 0px 0px 10px 0px;
+        display: flex;
+    }
 }
 
 // Tablet Version

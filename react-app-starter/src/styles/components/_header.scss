@@ -1,14 +1,16 @@
 // Header Stylization 
-/*
+
 header {
-    background-color: $green;
+    background-color: $darkLilac;
+    display: flex;
+    height: 150px;
     
     h1 {
-        //@include flatten;    
+        @include flatten;    
     }
     
     a {
-        text-decoration: none;
+        text-decoration: uppercase;
         color: $green;
     }
 
@@ -19,6 +21,21 @@ header {
         padding: em(16);
     }
 
+    .search-bar {
+        background-color: $lilac;
+        height: 25px;
+        width: 200px;
+    }
+
+
+    .btn-main-nav {
+        display: none;
+    }
+
+    .header-row-nav {
+        //display: none;
+    }
+
     @include mq(em(600)){
         .header-row-01 {
             padding: em(20);
@@ -26,4 +43,3 @@ header {
     }
 
 }
-*/

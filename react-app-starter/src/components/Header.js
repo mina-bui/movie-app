@@ -6,7 +6,9 @@ function Header() {
 	return (
 		<header>
 			<div className="header-row header-row-01">
-				<h1><Link to={'/'}>Cinedex</Link></h1>
+				<Link to={'/'}>
+					<img className="header-logo" src="/assets/images/database_logo_green.png" alt='Movie Database Logo' />
+				</Link>
 				<button className="btn-main-nav">
 					<span className="hamburger-icon">
 						<span className="line"></span>

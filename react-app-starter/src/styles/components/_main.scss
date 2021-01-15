@@ -57,6 +57,88 @@ main {
 // ===========================================================================
 // Home Page - Mobile Version
 
+// Inner Grid - Movie Details
+figure {
+    margin: 0;
+}
+.movies {
+    margin: 25px 25px;
+}
+.movie-poster {
+    grid-area: movie-poster;
+    height: auto;
+    width: 100%;
+}
+.movie-poster a:hover {
+    border-bottom: none;
+    border-bottom: 2px solid $green;
+}
+.movie-title {
+    grid-area: movie-title;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+.movie-title a {
+    color: $bodyFont;
+}
+.movie-title a:hover {
+    color: $bodyFont;
+    border-bottom: 2px solid $bodyFont;
+}
+.movie-genre {
+    grid-area: movie-genre;
+    margin-top: 5px;
+    font-size: 1em;
+}
+.movie-date {
+    grid-area: movie-date;
+    margin-top: 10px;
+}
+.movie-rating {
+    grid-area: movie-rating;
+    font-size: 0.9em;
+    color: $bodyFont;
+    padding: 10px 5px;
+    margin-left: auto;
+    border: 3px solid $green;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+.movie-runtime {
+    grid-area: movie-runtime;
+    font-size: 0.85em;
+    margin-left: auto;
+}
+
+.movie-container {
+    display: grid;
+    margin: 25px;
+    grid-template-areas:
+        "movie-poster   movie-poster"
+        "movie-title    movie-rating"
+        "movie-genre    movie-rating"
+        "movie-date     movie-runtime";
+}
+
+.desktop-movie-grid {
+    display: grid;
+    grid-template-areas:
+        "movie-01"
+        "movie-02"
+        "movie-03"
+        "movie-04"
+        "movie-05"
+        "movie-06"
+        "movie-07"
+        "movie-08"
+        "movie-09"
+        "movie-10"
+        "movie-11"
+        "movie-12";
+}
+
 // ===========================================================================
 // Single Movie Page - Mobile Version
 
@@ -186,6 +268,52 @@ main {
     }
     // =======================================================================
     // Home Page - Desktop Version
+    // Outer Grid - 12 Movies
+    .movie-01 {
+        grid-area: movie-01;
+    }
+    .movie-02 {
+        grid-area: movie-02;
+    }
+    .movie-03 {
+        grid-area: movie-03;
+    }
+    .movie-04 {
+        grid-area: movie-04;
+    }
+    .movie-05 {
+        grid-area: movie-05;
+    }
+    .movie-06 {
+        grid-area: movie-06;
+    }
+    .movie-07 {
+        grid-area: movie-07;
+    }
+    .movie-08 {
+        grid-area: movie-08;
+    }
+    .movie-09 {
+        grid-area: movie-09;
+    }
+    .movie-10 {
+        grid-area: movie-10;
+    }
+    .movie-11 {
+        grid-area: movie-11;
+    }
+    .movie-12 {
+        grid-area: movie-12;
+    }
+    .movie-container {
+        margin: 0px;
+    }
+    .desktop-movie-grid {
+        display: grid;
+        grid-template-areas:
+            "movie-01 movie-02 movie-03 movie-04 movie-05 movie-06"
+            "movie-07 movie-08 movie-09 movie-10 movie-11 movie-12";
+    }
 
     // =======================================================================
     // Single Movie Page - Desktop Version
@@ -258,7 +386,7 @@ main {
 
 // ===========================================================================
 // Tablet Version
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $mobile) and (max-width: $desktop) {
     // =======================================================================
     // Home Page - Tablet Version
 }

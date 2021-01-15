@@ -6,12 +6,14 @@ import Home from '../components/Home';
 import About from '../components/About';
 import SingleMovie from '../components/SingleMovie';
 import Favourites from '../components/Favourites';
+import SideMenu from '../components/SideMenu';
 
 function AppRouter() {
   return (
     <Router>
       <div className="wrapper">
         <Header />
+        <SideMenu />
           <Switch>
               <Route path={'/'} exact><Home /></Route>
               <Route path={'/about'}><About /></Route>

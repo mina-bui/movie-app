@@ -22,7 +22,6 @@ function Home() {
 
 					<div className="movies movie-02">
 						<div className="movie-container">
-
 							<figure class="movie-poster">
 								<a href="#0">
 									<img src="/assets/images/the-war-with-grandpa.jpg" alt="The War With Grandpa" />

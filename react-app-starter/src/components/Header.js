@@ -26,7 +26,7 @@ const Header = () => {
 				</button>
 			</div>
 
-			<div className="header-row header-row-02">
+			<div className="header-row header-row-nav">
 				<Nav />
 			</div>
 
@@ -44,7 +44,6 @@ const Header = () => {
 					<a href="#">Now Playing</a>
 				</div>
 			</div>
-
     	</header>
   	);
 }

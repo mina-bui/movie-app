@@ -1,19 +1,19 @@
 // Header Stylization
-
 header {
+    // General Header Styling 
     background-color: $darkLilac;
-    //display: flex;
     height: 140px;
+    //width: 100px;
 
     a {
         text-transform: uppercase;
         color: $green;
     }
 
+    // ==============================================================================================
     // Top Portion of Header
     .header-row-01 {
         display: flex;
-        //justify-content: space-between;
 
         // Header Logo 
         .header-logo {
@@ -40,145 +40,109 @@ header {
         }
     }
 
-    .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        -webkit-clip-path: inset(50%);
-        clip-path: inset(50%);
-        border: 0;
-    }
-
-    .btn-main-nav {
-        display: none;
-    }
-
     .header-row-nav {
-        display: none;
+        //display: none;
     }
 
-    // Styling for Form Select
+    // ==============================================================================================
+    // Top Portion of Header (Styling for Form Select)
     .header-form-select {
         list-style: none;
         display: flex;
         justify-content: space-between;
-        padding-right: 15px;
-        padding-left: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
         margin-top: 10px;
     }
 
-    // Popular Form--------------------------
+    // Popular Form------------------------------
+    // (ACTIVE STATE)
     .form-popular {
         background-color: $green;
         color: $darkIndigo;
         border-radius: 25px;
-        width: 105px;
+        width: 75px;
         height: 30px;
         text-align: center;
-        padding-top: 5px;
+        padding-top: 3px;
     }
     .form-popular a {
         color: $darkIndigo;
-        text-decoration: none;
+        //text-decoration: none;
         font-family: $boldFont;
-        font-size: 0.8em;
+        font-size: 0.59em;
         font-weight: 700;
     }
-
+    
     // Top Rated Form-----------------------------
+    // (NON-ACTIVE STATE)
     .form-top-rated {
-        width: 105px;
-        height: 30px;
         border-style: solid;
         border-color: $green;
         border-width: 3px;
         border-radius: 25px;
+        width: 75px;
+        height: 30px;
         text-align: center;
-        padding-top: 2px;
     }
     .form-top-rated a {
         color: $green;
-        text-decoration: none;
         font-family: $boldFont;
-        font-size: 0.8em;
+        font-size: 0.59em;
         font-weight: 700;
     }
 
-    // Upcoming Form-----------------------------
+    // Upcoming Form------------------------------
+    // (NON-ACTIVE STATE)
     .form-upcoming {
-        width: 105px;
-        height: 30px;
         border-style: solid;
         border-color: $green;
         border-width: 3px;
         border-radius: 25px;
+        width: 75px;
+        height: 30px;
         text-align: center;
-        padding-top: 2px;
     }
     .form-upcoming a {
         color: $green;
         text-decoration: none;
         font-family: $boldFont;
-        font-size: 0.8em;
+        font-size: 0.59em;
         font-weight: 700;
     }
 
     // Now Playing Form----------------------------
+    // (NON-ACTIVE STATE)
     .form-now-playing {
-        width: 105px;
-        height: 30px;
         border-style: solid;
         border-color: $green;
         border-width: 3px;
         border-radius: 25px;
+        width: 75px;
+        height: 30px;
         text-align: center;
-        padding-top: 2px;
     }
     .form-now-playing a {
         color: $green;
         text-decoration: none;
         font-family: $boldFont;
-        font-size: 0.8em;
+        font-size: 0.55em;
         font-weight: 700;
     }
 
+    
     @include mq(em(600)) {
+        /*
         .header-row-01 {
             padding: em(20);
         }
+        */
+        .header-form-select {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        
     }
-}
+    
 
-// Desktop Version
-@media only screen and (min-width: $tablet) {
-    // About Page - Desktop Version
-
-    // Favourites Page - Desktop Version
-
-    // Footer Page - Desktop Version
-
-    // Header - Desktop Version
-
-    // Home Page - Desktop Version
-
-    // Single Movie Page - Desktop Version
-}
-
-// Tablet Version
-@media only screen and (min-width: $mobile) {
-    // About Page - Tablet Version
-
-    // Favourites Page - Tablet Version
-
-    // Footer Page - Tablet Version
-
-    // Header - Tablet Version
-
-    // Home Page - Tablet Version
-
-    // Single Movie Page - Tablet Version
 }

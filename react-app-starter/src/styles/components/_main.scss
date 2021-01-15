@@ -36,8 +36,6 @@ main {
     padding-top: 25px;
 }
 .poster p {
-    // "watch trailer" => disappears in mobile mode
-    //display: none;
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
@@ -53,18 +51,18 @@ main {
     grid-area: fave;
     display: none;
 }
-.item5 {
+.overview {
     grid-area: overview;
 }
-.item6 {
+.media {
     grid-area: media;
     display: none;
 }
-.item7 {
+.related {
     grid-area: related;
     display: none;
 }
-.item8 {
+.tab-info {
     grid-area: tab-info;
 }
 
@@ -112,6 +110,7 @@ main {
     vertical-align: baseline;
     margin-right: 10px;
 }
+// removes link in mobile mode
 .not-active {
     pointer-events: none;
     cursor: default;
@@ -175,10 +174,10 @@ main {
         align-self: center;
         justify-self: center;
     }
-    .item5,
-    .item6,
-    .item7,
-    .item8 {
+    .overview,
+    .media,
+    .related,
+    .tab-info {
         display: grid;
         padding: 0px;
         margin: 0px;
@@ -207,9 +206,8 @@ main {
         color: $green;
     }
     .not-active {
-        pointer-events: none;
-        cursor: default;
-        text-decoration: none;
+        pointer-events: auto;
+        cursor: pointer;
     }
 }
 
@@ -217,14 +215,8 @@ main {
 // Tablet Version
 @media only screen and (min-width: $mobile) {
     // =======================================================================
-    // About Page - Tablet Version
-
-    // =======================================================================
     // Favourites Page - Tablet Version
 
     // =======================================================================
     // Home Page - Tablet Version
-
-    // =======================================================================
-    // Single Movie Page - Tablet Version
 }

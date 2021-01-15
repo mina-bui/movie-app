@@ -34,19 +34,19 @@ function SingleMovie() {
           </p>
         </div>
 
-        <div class="item5">
+        <div class="overview">
           <h3><a href="#0" class="not-active">Overview</a></h3>
         </div>
 
-        <div class="item6">
+        <div class="media">
           <h3><a href="#0">Media</a></h3>
         </div>
 
-        <div class="item7">
+        <div class="related">
           <h3><a href="#0">Related Movies</a></h3>
         </div>
 
-        <div class="item8">
+        <div class="tab-info">
           <p>
             In 1986, Park (Song Kang-ho) and Cho (Kim Roi-ha) are two simple-minded detectives assigned to a double murder investigation in a South Korean province. But when the murderer strikes several more times with the same pattern, the detectives realize that they are chasing the country's first documented serial killer. Relying on only their basic skills and tools, Park and Jo attempt to piece together the clues and solve the case in this thriller based on true events.
           </p>

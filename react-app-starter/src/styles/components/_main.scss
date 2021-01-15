@@ -6,7 +6,7 @@ main {
 }
 
 // ===========================================================================
-// About Page
+// About Page - Mobile Version
 
 .about-main {
     padding: 5px 25px 100px 25px;
@@ -26,7 +26,39 @@ main {
 }
 
 // ===========================================================================
-// Single Movie Page
+// Favourites Page - Mobile Version
+
+.favourite-main {
+    padding: 5px 25px 50px 25px;
+}
+.favourite-main p {
+    color: $lilac;
+}
+.favourite-main h2 {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+.favourite-tutorial-icons {
+    text-align: center;
+}
+.favourite-tutorial-icons img {
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin: 0px;
+}
+.favourite-main p img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px;
+    vertical-align: baseline;
+}
+
+// ===========================================================================
+// Home Page - Mobile Version
+
+// ===========================================================================
+// Single Movie Page - Mobile Version
 
 .title-desc {
     grid-area: title-desc;
@@ -124,7 +156,7 @@ main {
         margin: 1% 15% 0px 30%;
     } */
     p {
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
     h2 {
         font-size: 2.5em;
@@ -138,7 +170,20 @@ main {
 
     // =======================================================================
     // Favourites Page - Desktop Version
-
+    .favourite-main h2 {
+        text-align: left;
+        padding: 20px 0px 0px 0px;
+    }
+    .favourite-tutorial-icons {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .favourite-main p img {
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px;
+        vertical-align: sub;
+    }
     // =======================================================================
     // Home Page - Desktop Version
 
@@ -214,9 +259,6 @@ main {
 // ===========================================================================
 // Tablet Version
 @media only screen and (min-width: $mobile) {
-    // =======================================================================
-    // Favourites Page - Tablet Version
-
     // =======================================================================
     // Home Page - Tablet Version
 }

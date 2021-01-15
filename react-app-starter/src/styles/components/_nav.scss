@@ -1,3 +1,55 @@
+// Nav 
+
+nav {
+    
+    background-color: $darkIndigo;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: height 0.5s ease, visibility 0s 0.5s;
+
+    .show & {
+        transition: height 0.5s ease, visibility 0s;
+        visibility: visible;
+        height: 208px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $green;
+        line-height: 42px;
+        text-align: center;
+        &:hover, &:focus, &:active {
+            background-color: rgba(white, 0.3);
+        }
+    }
+
+    @include mq(em(600)){
+
+        visibility: visible;
+        transition: none;
+        height: auto;
+
+        .show & {
+            visibility: visible;
+            transition: none;
+            height: auto;
+        }
+        
+        ul {
+            display: flex;
+        }
+
+        a {
+            padding: 0 em(10);
+        }
+
+    }
+
+}
+
+/*
 // Desktop Version
 @media only screen and (min-width: $tablet) {
     // About Page - Desktop Version
@@ -27,3 +79,4 @@
 
     // Single Movie Page - Tablet Version
 }
+*/

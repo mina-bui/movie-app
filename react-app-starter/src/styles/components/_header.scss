@@ -2,29 +2,55 @@
 
 header {
     background-color: $darkLilac;
-    display: flex;
-    height: 150px;
-
-    h1 {
-        @include flatten;
-    }
+    //display: flex;
+    height: 140px;
 
     a {
-        text-decoration: uppercase;
+        text-transform: uppercase;
         color: $green;
     }
 
+    // Top Portion of Header
     .header-row-01 {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: em(16);
+        //justify-content: space-between;
+
+        // Header Logo 
+        .header-logo {
+            width: 180px;
+            margin-top: 24px;
+            margin-left: 20px;
+            margin-bottom: 0px;
+        }
+        // Search Bar
+        .search-bar {
+            background-color: $lilac;
+            border-radius: 25px;
+            height: 25px;
+            width: 150px;
+            margin-left: 25px;
+            margin-top: 35px;
+        }
+        // Search Bar Icon
+        .search-bar-icon {
+            width: 52px;
+            height: 52px;
+            margin-left: 0px;
+            margin-top: 27px;
+        }
     }
 
-    .search-bar {
-        background-color: $lilac;
-        height: 25px;
-        width: 200px;
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        border: 0;
     }
 
     .btn-main-nav {
@@ -32,7 +58,92 @@ header {
     }
 
     .header-row-nav {
-        //display: none;
+        display: none;
+    }
+
+    // Styling for Form Select
+    .header-form-select {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+
+    // Popular Form--------------------------
+    .form-popular {
+        background-color: $green;
+        color: $darkIndigo;
+        border-radius: 25px;
+        width: 105px;
+        height: 30px;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .form-popular a {
+        color: $darkIndigo;
+        text-decoration: none;
+        font-family: $boldFont;
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+
+    // Top Rated Form-----------------------------
+    .form-top-rated {
+        width: 105px;
+        height: 30px;
+        border-style: solid;
+        border-color: $green;
+        border-width: 3px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 2px;
+    }
+    .form-top-rated a {
+        color: $green;
+        text-decoration: none;
+        font-family: $boldFont;
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+
+    // Upcoming Form-----------------------------
+    .form-upcoming {
+        width: 105px;
+        height: 30px;
+        border-style: solid;
+        border-color: $green;
+        border-width: 3px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 2px;
+    }
+    .form-upcoming a {
+        color: $green;
+        text-decoration: none;
+        font-family: $boldFont;
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+
+    // Now Playing Form----------------------------
+    .form-now-playing {
+        width: 105px;
+        height: 30px;
+        border-style: solid;
+        border-color: $green;
+        border-width: 3px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 2px;
+    }
+    .form-now-playing a {
+        color: $green;
+        text-decoration: none;
+        font-family: $boldFont;
+        font-size: 0.8em;
+        font-weight: 700;
     }
 
     @include mq(em(600)) {

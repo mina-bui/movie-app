@@ -1,9 +1,9 @@
 // Nav
 import { NavLink } from 'react-router-dom';
 
-function Nav() {
-  return (
-    <nav>
+const Nav = ({ hideNav }) => (
+
+    <nav onClick={hideNav}>
         <ul>
             <li>
                 <NavLink to={'/'}>Home</NavLink>
@@ -20,6 +20,6 @@ function Nav() {
         </ul>
     </nav>
   );
-}
+
 
 export default Nav;

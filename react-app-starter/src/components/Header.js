@@ -1,14 +1,21 @@
 // Header
-import { Link } from 'react-router-dom';
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
-function Header() {
+
+const Header = () => {
 	return (
 		<header>
 			<div className="header-row header-row-01">
 				<Link to={'/'}>
 					<img className="header-logo" src="/assets/images/database_logo_green.png" alt='Movie Database Logo' />
 				</Link>
+
+				<div className="search-bar"></div>
+				<div className="search-bar-icon">
+					<img src="/assets/images/search_icon.png" alt="Search Bar Icon"/>
+				</div>
+		
 				<button className="btn-main-nav">
 					<span className="hamburger-icon">
 						<span className="line"></span>
@@ -19,30 +26,24 @@ function Header() {
 				</button>
 			</div>
 
-			<div className="search-bar"></div>
-
-			<div className="header-row header-row-nav">
+			<div className="header-row header-row-02">
 				<Nav />
 			</div>
 
 			<div className="header-form-select">
-				<ul>
-					<li className="form-select popular">
-						<a href="#">Popular</a>
-					</li>
-					<li className="form-select popular">
-						<a href="#">Top Rated</a>
-					</li>
-					<li className="form-select popular">
-						<a href="#">Upcoming</a>
-					</li>
-					<li className="form-select popular">
-						<a href="#">Now Playing</a>
-					</li>
-				</ul>
+				<div className="form-popular">
+					<a href="#">Popular</a>
+				</div>
+				<div className="form-top-rated">
+					<a href="#">Top Rated</a>
+				</div>
+				<div className="form-upcoming">
+					<a href="#">Upcoming</a>
+				</div>
+				<div className="form-now-playing">
+					<a href="#">Now Playing</a>
+				</div>
 			</div>
-
-
 
     	</header>
   	);

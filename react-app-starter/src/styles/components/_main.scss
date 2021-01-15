@@ -60,96 +60,57 @@ h2 {
 // Single Movie Page
 
 .item1 {
-    grid-area: a;
+    grid-area: title-desc;
 }
 .item2 {
-    grid-area: b;
+    grid-area: poster;
 }
 .item3 {
-    grid-area: c;
+    grid-area: rating;
 }
 .item4 {
-    grid-area: d;
+    grid-area: fave;
 }
 .item5 {
-    grid-area: e;
+    grid-area: overview;
 }
 .item6 {
-    grid-area: f;
+    grid-area: media;
 }
 .item7 {
-    grid-area: g;
+    grid-area: related;
 }
 .item8 {
-    grid-area: h;
+    grid-area: tab-info;
 }
 .item9 {
-    grid-area: i;
-}
-.item10 {
-    grid-area: j;
-}
-.item11 {
-    grid-area: k;
+    grid-area: trailer;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        "b b b a a a"
-        "b b b c d d"
-        "b b b e f g"
-        "k k k h i j";
-
-    grid-gap: 10px;
-    padding: 10px;
+    display: block;
 }
 .grid-container > div {
     background-color: black;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
+    text-align: left;
+    padding: 20px 20px;
 }
 
-/* .singlemovie-main {
+.singlemovie-main {
     padding: 20px 50px 50px 50px;
 }
-.singlemovie-main p {
-    font-size: 1em;
-    line-height: 1.75;
-}
-.singlemovie-rating {
-    color: $green;
-    text-transform: uppercase;
-}
-.singlemovie-main h2 {
+.singlemovie-main div h2 {
     font-size: 1.75em;
     padding: 0px 0px 0px 0px;
 }
-.singlemovie-main h3 {
+.singlemovie-main div h3 {
     font-size: 1.5em;
     font-weight: 400;
     padding: 15px 0px 15px 0px;
 }
-.singlemovie-poster-container {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-.singlemovie-poster-container p {
-    // "watch trailer" => disappears in mobile mode
-    display: none;
-    text-align: center;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    background-color: $lilac;
+.singlemovie-rating {
     color: $green;
-    padding: 10px;
-}
-.singlemovie-desktop-tabs {
-    // "media" and "related movies" disappears in mobile mode
-    display: none;
+    text-transform: uppercase;
 }
 .singlemovie-main span {
     color: $bodyFont;
@@ -157,13 +118,42 @@ h2 {
     padding: 10px 5px 10px 5px;
     margin: 35px;
     border: 3px solid $green;
-} */
+}
+.singlemovie-main div p {
+    font-size: 1em;
+    line-height: 1.75;
+}
+.item9 p {
+    // "watch trailer" => disappears in mobile mode
+    //display: none;
+    text-align: center;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    background-color: $lilac;
+    color: $green;
+    padding: 10px;
+}
+.item5,
+.item6,
+.item7,
+.item9 {
+    display: none;
+}
+
+/*
+
+
+.singlemovie-desktop-tabs {
+    // "media" and "related movies" disappears in mobile mode
+    display: none;
+}
+ */
 
 // Desktop Version
 @media only screen and (min-width: $tablet) {
-    main {
+    /*     main {
         margin: 1% 15% 0px 30%;
-    }
+    } */
     p {
         font-size: 1.6em;
     }
@@ -184,6 +174,28 @@ h2 {
     // Home Page - Desktop Version
 
     // Single Movie Page - Desktop Version
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      rating      fave        fave"
+            "poster     poster      poster      overview    media       related"
+            "trailer    trailer     trailer     tab-info    tab-info    tab-info";
+
+        grid-gap: 10px;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    .item5,
+    .item6,
+    .item7,
+    .item9 {
+        display: grid;
+    }
+
     /*     .singlemovie-main h2 {
         font-size: 2.3em;
     }

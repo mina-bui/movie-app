@@ -140,15 +140,6 @@ h2 {
     display: none;
 }
 
-/*
-
-
-.singlemovie-desktop-tabs {
-    // "media" and "related movies" disappears in mobile mode
-    display: none;
-}
- */
-
 // Desktop Version
 @media only screen and (min-width: $tablet) {
     /*     main {
@@ -178,10 +169,15 @@ h2 {
         display: grid;
         grid-template-areas:
             "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      title-desc  title-desc  title-desc"
+            "poster     poster      poster      title-desc  title-desc  title-desc"
             "poster     poster      poster      rating      fave        fave"
             "poster     poster      poster      overview    media       related"
             "trailer    trailer     trailer     tab-info    tab-info    tab-info";
-
         grid-gap: 10px;
         padding: 10px;
         height: 100%;
@@ -189,47 +185,31 @@ h2 {
         margin: 0 auto;
         padding-top: 100px;
     }
+    .grid-container h2,
+    .grid-container h3 {
+        padding: 0px;
+        margin: 0px;
+    }
+    .item2 {
+        height: 100%;
+        width: 300px;
+    }
     .item5,
     .item6,
     .item7,
     .item9 {
         display: grid;
     }
-
-    /*     .singlemovie-main h2 {
+    .singlemovie-main div h2 {
         font-size: 2.3em;
     }
     .singlemovie-rating {
         text-transform: none;
         color: $bodyFont;
     }
-    .singlemovie-main span:nth-child(1) {
+    .singlemovie-rating p {
         color: $green;
     }
-    .singlemovie-poster-container {
-        height: 100%;
-        width: 40%;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
-    .singlemovie-poster-container p {
-        display: block;
-    }
-    .singlemovie-desktop-tabs {
-        display: block;
-    }
-    .singlemovie-desktop-tabs-img {
-        display: flex;
-        height: 100%;
-        width: 15%;
-    }
-    .singlemovie-desktop-tabs-img img {
-        margin: 35px 35px;
-    }
-    .singlemovie-desktop-tabs h3 {
-        padding: 0px 0px 10px 0px;
-        display: flex;
-    } */
 }
 
 // Tablet Version

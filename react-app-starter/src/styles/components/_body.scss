@@ -5,33 +5,76 @@ body {
     color: $bodyFont;
     font-family: $regularFont;
 }
+p {
+    color: $bodyFont;
+    line-height: 2.2;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $regularFont;
+    color: $green;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2em;
+}
+a {
+    color: $green;
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: 3px solid $green;
+}
 
+// ===========================================================================
+// Go Back Link
+
+.go-back {
+    color: $green;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+.go-back:active,
+.go-back:hover {
+    color: $green;
+    text-transform: uppercase;
+}
+
+// ===========================================================================
 // Desktop Version
 @media only screen and (min-width: $tablet) {
+    // =======================================================================
     // About Page - Desktop Version
 
+    // =======================================================================
     // Favourites Page - Desktop Version
 
-    // Footer Page - Desktop Version
-
-    // Header - Desktop Version
-
+    // =======================================================================
     // Home Page - Desktop Version
 
+    // =======================================================================
     // Single Movie Page - Desktop Version
 }
 
+// ===========================================================================
 // Tablet Version
 @media only screen and (min-width: $mobile) {
+    // =======================================================================
     // About Page - Tablet Version
 
+    // =======================================================================
     // Favourites Page - Tablet Version
 
-    // Footer Page - Tablet Version
-
-    // Header - Tablet Version
-
+    // =======================================================================
     // Home Page - Tablet Version
 
+    // =======================================================================
     // Single Movie Page - Tablet Version
 }

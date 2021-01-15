@@ -4,40 +4,8 @@ main {
     padding: $section-padding;
     font-family: $regularFont;
 }
-p {
-    color: $bodyFont;
-    line-height: 2.2;
-    font-weight: 400;
-    font-size: 1.3em;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $regularFont;
-    color: $green;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-h2 {
-    font-size: 2em;
-}
 
-// Go Back Link
-
-.go-back {
-    color: $green;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-}
-.go-back:active,
-.go-back:hover {
-    color: $green;
-    text-transform: uppercase;
-}
-
+// ===========================================================================
 // About Page
 
 .about-main {
@@ -57,43 +25,57 @@ h2 {
     padding: 20px 0px 40px 0px;
 }
 
+// ===========================================================================
 // Single Movie Page
 
-.item1 {
+.title-desc {
     grid-area: title-desc;
 }
-.item2 {
+.poster {
     grid-area: poster;
+    padding-top: 25px;
 }
-.item3 {
+.poster p {
+    // "watch trailer" => disappears in mobile mode
+    //display: none;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $green;
+    vertical-align: baseline;
+    background-color: $darkLilac;
+    padding: 10px 20px 10px 20px;
+}
+.rating {
     grid-area: rating;
 }
-.item4 {
+.fave {
     grid-area: fave;
+    display: none;
 }
 .item5 {
     grid-area: overview;
 }
 .item6 {
     grid-area: media;
+    display: none;
 }
 .item7 {
     grid-area: related;
+    display: none;
 }
 .item8 {
     grid-area: tab-info;
 }
-.item9 {
-    grid-area: trailer;
-}
 
 .grid-container {
-    display: block;
-}
-.grid-container > div {
-    background-color: black;
-    text-align: left;
-    padding: 20px 20px;
+    display: grid;
+    grid-template-areas:
+        "poster"
+        "title-desc"
+        "rating"
+        "overview"
+        "tab-info";
 }
 
 .singlemovie-main {
@@ -123,23 +105,20 @@ h2 {
     font-size: 1em;
     line-height: 1.75;
 }
-.item9 p {
-    // "watch trailer" => disappears in mobile mode
-    //display: none;
-    text-align: center;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    background-color: $lilac;
-    color: $green;
-    padding: 10px;
+.play_icon,
+.favourite_icon {
+    height: 15px;
+    width: 15px;
+    vertical-align: baseline;
+    margin-right: 10px;
 }
-.item5,
-.item6,
-.item7,
-.item9 {
-    display: none;
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
 
+// ===========================================================================
 // Desktop Version
 @media only screen and (min-width: $tablet) {
     /*     main {
@@ -152,53 +131,70 @@ h2 {
         font-size: 2.5em;
     }
 
+    // =======================================================================
     // About Page - Desktop Version
     .about-main p:nth-child(5) {
         padding-top: 150px;
     }
+
+    // =======================================================================
     // Favourites Page - Desktop Version
 
-    // Footer Page - Desktop Version
-
-    // Header - Desktop Version
-
+    // =======================================================================
     // Home Page - Desktop Version
 
+    // =======================================================================
     // Single Movie Page - Desktop Version
     .grid-container {
         display: grid;
         grid-template-areas:
             "poster     poster      poster      title-desc  title-desc  title-desc"
-            "poster     poster      poster      title-desc  title-desc  title-desc"
-            "poster     poster      poster      title-desc  title-desc  title-desc"
-            "poster     poster      poster      title-desc  title-desc  title-desc"
-            "poster     poster      poster      title-desc  title-desc  title-desc"
-            "poster     poster      poster      title-desc  title-desc  title-desc"
-            "poster     poster      poster      title-desc  title-desc  title-desc"
             "poster     poster      poster      rating      fave        fave"
             "poster     poster      poster      overview    media       related"
-            "trailer    trailer     trailer     tab-info    tab-info    tab-info";
-        grid-gap: 10px;
-        padding: 10px;
+            "poster     poster      poster     tab-info    tab-info    tab-info";
+
         height: 100%;
         width: 100%;
         margin: 0 auto;
-        padding-top: 100px;
+        padding-top: 50px;
+    }
+    .grid-container > div {
+        text-align: left;
     }
     .grid-container h2,
     .grid-container h3 {
         padding: 0px;
         margin: 0px;
     }
-    .item2 {
+    .poster {
         height: 100%;
-        width: 300px;
+        width: 350px;
+        padding-top: 0px;
+        font-size: 1.3em;
+        margin-right: 50px;
+        align-self: center;
+        justify-self: center;
     }
     .item5,
     .item6,
     .item7,
-    .item9 {
+    .item8 {
         display: grid;
+        padding: 0px;
+        margin: 0px;
+    }
+    .rating p {
+        color: $green;
+        font-size: 1.4em;
+        text-transform: uppercase;
+    }
+    .fave {
+        display: grid;
+    }
+    .fave p {
+        color: $green;
+        font-size: 1.2em;
+        text-transform: uppercase;
     }
     .singlemovie-main div h2 {
         font-size: 2.3em;
@@ -210,19 +206,25 @@ h2 {
     .singlemovie-rating p {
         color: $green;
     }
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+    }
 }
 
+// ===========================================================================
 // Tablet Version
 @media only screen and (min-width: $mobile) {
+    // =======================================================================
     // About Page - Tablet Version
 
+    // =======================================================================
     // Favourites Page - Tablet Version
 
-    // Footer Page - Tablet Version
-
-    // Header - Tablet Version
-
+    // =======================================================================
     // Home Page - Tablet Version
 
+    // =======================================================================
     // Single Movie Page - Tablet Version
 }

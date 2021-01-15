@@ -1,11 +1,12 @@
 // Header
-import { Link } from 'react-router-dom';
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
-function Header() {
+
+const Header = () => {
 	return (
 		<header>
-			<div className="header-row-01">
+			<div className="header-row header-row-01">
 				<Link to={'/'}>
 					<img className="header-logo" src="/assets/images/database_logo_green.png" alt='Movie Database Logo' />
 				</Link>
@@ -14,7 +15,7 @@ function Header() {
 				<div className="search-bar-icon">
 					<img src="/assets/images/search_icon.png" alt="Search Bar Icon"/>
 				</div>
-			
+		
 				<button className="btn-main-nav">
 					<span className="hamburger-icon">
 						<span className="line"></span>
@@ -25,7 +26,7 @@ function Header() {
 				</button>
 			</div>
 
-			<div className="header-row header-row-nav">
+			<div className="header-row header-row-02">
 				<Nav />
 			</div>
 

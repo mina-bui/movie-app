@@ -4,7 +4,20 @@ function SingleMovie() {
   return (
     <main class="singlemovie-main">
       <a href="#0" class="go-back">&#5176; Back</a>
-      <section>
+      <div class="grid-container">
+        <div class="item1">Title and Description</div>
+        <div class="item2">Poster</div>
+        <div class="item3">Rating</div>
+        <div class="item4">Add/Remove Favorites</div>
+        <div class="item5">Overview</div>
+        <div class="item6">Media</div>
+        <div class="item7">Related Movies</div>
+        <div class="item8">Overview - Extended</div>
+        <div class="item9">Media - Extended</div>
+        <div class="item10">Related Movies- Extended</div>
+        <div class="item11">Watch Trailer</div>
+      </div>
+{/*       <section>
         <div class="singlemovie-poster-container">
           <img src="https://www.insidethekraken.com/wp-content/uploads/2018/10/Memories-of-Murder-poster.jpg"></img>
           <p>Watch Trailer</p>
@@ -36,7 +49,7 @@ function SingleMovie() {
             </p>
           </div>
         </section>
-      </section>
+      </section> */}
     </main>
   );
 }

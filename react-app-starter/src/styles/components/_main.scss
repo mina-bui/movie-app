@@ -59,7 +59,59 @@ h2 {
 
 // Single Movie Page
 
-.singlemovie-main {
+.item1 {
+    grid-area: a;
+}
+.item2 {
+    grid-area: b;
+}
+.item3 {
+    grid-area: c;
+}
+.item4 {
+    grid-area: d;
+}
+.item5 {
+    grid-area: e;
+}
+.item6 {
+    grid-area: f;
+}
+.item7 {
+    grid-area: g;
+}
+.item8 {
+    grid-area: h;
+}
+.item9 {
+    grid-area: i;
+}
+.item10 {
+    grid-area: j;
+}
+.item11 {
+    grid-area: k;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "b b b a a a"
+        "b b b c d d"
+        "b b b e f g"
+        "k k k h i j";
+
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* .singlemovie-main {
     padding: 20px 50px 50px 50px;
 }
 .singlemovie-main p {
@@ -105,7 +157,7 @@ h2 {
     padding: 10px 5px 10px 5px;
     margin: 35px;
     border: 3px solid $green;
-}
+} */
 
 // Desktop Version
 @media only screen and (min-width: $tablet) {
@@ -132,7 +184,7 @@ h2 {
     // Home Page - Desktop Version
 
     // Single Movie Page - Desktop Version
-    .singlemovie-main h2 {
+    /*     .singlemovie-main h2 {
         font-size: 2.3em;
     }
     .singlemovie-rating {
@@ -165,7 +217,7 @@ h2 {
     .singlemovie-desktop-tabs h3 {
         padding: 0px 0px 10px 0px;
         display: flex;
-    }
+    } */
 }
 
 // Tablet Version

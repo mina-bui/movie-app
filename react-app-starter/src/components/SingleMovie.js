@@ -2,11 +2,11 @@
 
 function SingleMovie() {
   return (
-    <main class="singlemovie-main">
 
-      <a href="#0" class="go-back">&#5176; Back</a>
 
-      <div class="grid-container">
+
+
+      <section class="grid-container">
 
         <div class="title-desc">
           <h2>Memories of Murder</h2>
@@ -52,8 +52,8 @@ function SingleMovie() {
           </p>
         </div>
 
-      </div>
-    </main>
+      </section>
+
   );
 }
 

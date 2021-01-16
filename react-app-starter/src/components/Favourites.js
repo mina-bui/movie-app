@@ -2,9 +2,9 @@
 
 function Favourites() {
   return (
-    <main class="favourite-main">
 
-      <a href="#0" class="go-back">&#5176; Back</a>
+
+      <section className="favourite-section">
 
       <h2>Favourites</h2>
 
@@ -30,8 +30,8 @@ function Favourites() {
           <img src="../assets/images/favourite_icon.png" class="favourite_icon"></img>
            when you click on an individual movie to learn more or watch a trailer.
         </p>
-
-    </main>
+        </section>
+ 
   );
 }
 

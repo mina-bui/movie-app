@@ -3,11 +3,10 @@ import Nav from './Nav';
 import { Link } from 'react-router-dom';
 
 
-function SideMenu() {
+function MainNavigation() {
 
   return (
-    <main>
-        <section>
+        <section className="main-navigation">
             <div className="side-menu-main">
                 <div className="side-logo-button">
                     <Link to={'/'}>
@@ -52,8 +51,7 @@ function SideMenu() {
                 </div>
             </div>
         </section>
-    </main>
   );
 }
 
-export default SideMenu;
+export default MainNavigation;

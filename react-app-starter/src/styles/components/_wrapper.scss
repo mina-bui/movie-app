@@ -10,6 +10,30 @@
         flex: 1;
     }
     //@include mc;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: ".      header"
+                             ".      main"
+                             "footer footer";
+        position: relative;
+
+        header {
+            grid-area: header;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+    }
+
+
 }
 
 // Desktop Version

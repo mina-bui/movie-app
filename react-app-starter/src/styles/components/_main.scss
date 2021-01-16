@@ -3,6 +3,11 @@
 main {
     padding: $section-padding;
     font-family: $regularFont;
+    overflow: hidden;
+    position: relative;
+    @media (min-width: $tablet){
+        position: static;
+    }
 }
 
 // ===========================================================================
@@ -119,13 +124,27 @@ figure {
 }
 
 .movie-container {
-    display: grid;
+   // display: grid;
+   max-width: 247px;
     margin: 25px;
-    grid-template-areas:
+    /*grid-template-areas:
         "movie-poster   movie-poster"
         "movie-title    movie-rating"
         "movie-genre    movie-rating"
-        "movie-date     movie-runtime";
+        "movie-date     movie-runtime";*/
+}
+
+.movie-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.movie-title-genre-and-date {
+    flex: 1;
+}
+
+.movie-rating-and-runtime {
+    width: 50px;
 }
 
 .desktop-movie-grid {

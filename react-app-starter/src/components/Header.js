@@ -1,9 +1,11 @@
 // Header
-import Nav from './Nav';
+//import Nav from './Nav';
 import { Link } from 'react-router-dom';
+//import Navbar from './Nav/Navbar';
 
 
-const Header = () => {
+const Header = ({ handleOpenNav }) => {
+
 	return (
 		<header>
 			<div className="header-row header-row-01">
@@ -16,7 +18,7 @@ const Header = () => {
 					<img src="/assets/images/search_icon.png" alt="Search Bar Icon"/>
 				</div>
 		
-				<button className="btn-main-nav">
+				<button className="btn-main-nav" onClick={handleOpenNav}>
 					<span className="hamburger-icon">
 						<span className="line"></span>
 						<span className="line"></span>
@@ -24,10 +26,6 @@ const Header = () => {
 					</span>
 					<span className="sr-only">Menu</span>
 				</button>
-			</div>
-
-			<div className="header-row header-row-nav">
-				<Nav />
 			</div>
 
 			<div className="header-form-select">

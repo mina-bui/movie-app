@@ -1,10 +1,12 @@
 // About
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
-    <main class="about-main">
-      <a href="#0" class="go-back">&#5176; Back</a>
+ 
+     
       <section>
+         <Link to={'/'} className="go-back">&#5176; Back</Link>
         <h2>About MoviesGo</h2>
         <p>
           MoviesGo is a movie database site hoping to satisfy the cinema needs of movie
@@ -21,7 +23,7 @@ function About() {
           For educational purposes only.
         </p>
       </section>
-    </main>
+    
   );
 }
 

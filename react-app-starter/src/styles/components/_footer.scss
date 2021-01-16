@@ -26,10 +26,70 @@ footer {
 
     p {
         font-size: 0.9em;
+        color: $lilac;
+        line-height: 1.5;
     }
 
     .social img {
         width: 50px;
         padding: 10px;
+    }
+
+    h3 {
+        color: $bodyFont;
+        margin-top: 50px;
+        line-height: 0.5;
+    }
+
+    h5 {
+        color: $bodyFont;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        line-height: 0.5;
+    }
+    // ===========================================================================
+    // Desktop Version
+    @media only screen and (min-width: $tablet) {
+        text-align: left;
+        .copyright {
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+        }
+        .contact {
+            grid-area: contact;
+        }
+        .contact-info {
+            grid-area: contact-info;
+        }
+        .social {
+            grid-area: social;
+            margin: 0px 125px 0px 125px;
+            img {
+                width: 40px;
+            }
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        h5 {
+            margin-top: 25px;
+        }
+        .location {
+            grid-area: location;
+        }
+        .address {
+            grid-area: address;
+        }
+        .empty {
+            grid-area: empty;
+        }
+        .footer-grid {
+            display: grid;
+            margin: 25px;
+            justify-content: center;
+            grid-template-areas:
+                "contact        empty     location"
+                "contact-info   social      address";
+        }
     }
 }

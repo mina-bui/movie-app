@@ -23,7 +23,7 @@ main {
 .about-section p:nth-child(4) {
     color: $green;
     font-style: italic;
-    padding-top: 250px;
+    padding: 250px 0px 0px 0px;
 }
 .about-section h2 {
     text-align: center;
@@ -94,12 +94,12 @@ figure {
 }
 .movie-genre {
     grid-area: movie-genre;
-    margin-top: 5px;
+    margin: 5px 0px 0px 0px;
     font-size: 0.8em;
 }
 .movie-date {
     grid-area: movie-date;
-    margin-top: 10px;
+    margin: 10px 0px 0px 0px;
     font-size: 0.8em;
 }
 .movie-rating {
@@ -108,7 +108,7 @@ figure {
     color: $bodyFont;
     padding: 10px 5px;
     //margin-left: auto;
-    margin-right: 10px;
+    margin: 0px 10px 0px 0px;
     border: 3px solid $green;
     width: 45px;
     height: 45px;
@@ -119,7 +119,6 @@ figure {
     font-size: 0.8em;
     //margin-left: auto;
 }
-
 .movie-container {
     // display: grid;
     max-width: 247px;
@@ -130,20 +129,16 @@ figure {
         "movie-genre    movie-rating"
         "movie-date     movie-runtime";*/
 }
-
 .movie-info {
     display: flex;
     align-items: flex-start;
 }
-
 .movie-title-genre-and-date {
     flex: 1;
 }
-
 .movie-rating-and-runtime {
     width: 50px;
 }
-
 .desktop-movie-grid {
     display: grid;
     grid-template-areas:
@@ -169,7 +164,7 @@ figure {
 }
 .poster {
     grid-area: poster;
-    padding-top: 25px;
+    padding: 25px 0px 0px 0px;
 }
 .poster p {
     text-align: center;
@@ -201,7 +196,6 @@ figure {
 .tab-info {
     grid-area: tab-info;
 }
-
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -211,7 +205,6 @@ figure {
         "overview"
         "tab-info";
 }
-
 .single-movie-section {
     padding: 20px 50px 50px 50px;
 }
@@ -244,7 +237,7 @@ figure {
     height: 15px;
     width: 15px;
     vertical-align: baseline;
-    margin-right: 10px;
+    margin: 0px 10px 0px 0px;
 }
 // removes link in mobile mode
 .not-active {
@@ -256,9 +249,6 @@ figure {
 // ===========================================================================
 // Desktop Version
 @media only screen and (min-width: $tablet) {
-    /*     main {
-        margin: 1% 15% 0px 30%;
-    } */
     p {
         font-size: 1.3em;
     }
@@ -266,13 +256,11 @@ figure {
         font-size: 2.5em;
     }
 
-    // =======================================================================
     // About Page - Desktop Version
     .about-section p:nth-child(5) {
-        padding-top: 150px;
+        padding: 150px 0px 0px 0px;
     }
 
-    // =======================================================================
     // Favourites Page - Desktop Version
     .favourite-main h2 {
         text-align: left;
@@ -280,7 +268,7 @@ figure {
     }
     .favourite-tutorial-icons {
         text-align: left;
-        margin-bottom: 50px;
+        margin: 0px 0px 50px 0px;
     }
     .favourite-main p img {
         height: 50px;
@@ -288,7 +276,7 @@ figure {
         margin: 0px 10px;
         vertical-align: sub;
     }
-    // =======================================================================
+
     // Home Page - Desktop Version
     // Outer Grid - 12 Movies
     .movie-01 {
@@ -337,7 +325,6 @@ figure {
             "movie-07 movie-08 movie-09 movie-10 movie-11 movie-12";
     }
 
-    // =======================================================================
     // Single Movie Page - Desktop Version
     .grid-container {
         display: grid;
@@ -350,7 +337,7 @@ figure {
         height: 100%;
         width: 100%;
         margin: 0 auto;
-        padding-top: 50px;
+        padding: 50px 0px 0px 0px;
     }
     .grid-container > div {
         text-align: left;
@@ -363,9 +350,9 @@ figure {
     .poster {
         height: 100%;
         width: 350px;
-        padding-top: 0px;
+        padding: 0px 0px 0px 0px;
         font-size: 1.3em;
-        margin-right: 50px;
+        margin: 0px 50px 0px 0px;
         align-self: center;
         justify-self: center;
     }
@@ -405,10 +392,8 @@ figure {
         cursor: pointer;
     }
 }
-
 // ===========================================================================
 // Tablet Version
 @media only screen and (min-width: $mobile) and (max-width: $desktop) {
-    // =======================================================================
     // Home Page - Tablet Version
 }

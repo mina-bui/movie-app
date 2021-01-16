@@ -16,7 +16,9 @@ function MainNavigation() {
 
                 <div className="side-menu-search">
                     <div className="side-menu-search-icon">
-                        <img src="/assets/images/search_icon.png" alt="Search Bar Icon" />
+                        <Link to={'/'}>
+                            <img src="/assets/images/search_icon.png" alt="Search Bar Icon" />
+                        </Link>
                     </div>
                     <div className="search-bar-line"></div>
                 </div>
@@ -24,28 +26,34 @@ function MainNavigation() {
                 <div className="side-menu-nav">
                     <div className="side-home-button">
                         <div className="side-home-logo">
-                            <img src="/assets/images/home_button_icon.png" alt="Home Button Icon" />
+                            <Link to={'/'}>
+                                <img src="/assets/images/home_button_icon.png" alt="Home Button Icon" />
+                            </Link>
                         </div>
                         <Link to={'/'}>
                             Home
-                      </Link>
+                        </Link>
                     </div>
 
                     <div className="side-favourites-button">
                         <div className="side-favourites-logo">
-                            <img src="/assets/images/favourite_icon.png" alt="Favourite Icon" />
+                            <Link to={'/favourites'}>
+                                <img src="/assets/images/favourite_icon.png" alt="Favourite Icon" />
+                            </Link>
                         </div>
                         <div className="side-favourites-link">
-                            <a href="/favourites">Favourites</a>
+                            <Link to={'/favourites'}>Favourites</Link>
                         </div>
                     </div>
 
                     <div className="side-about-button">
                         <div className="side-about-logo">
-                            <img src="/assets/images/about_icon.png" alt="About Icon" />
+                            <Link to={'/about'}>
+                                <img src="/assets/images/about_icon.png" alt="About Icon" />
+                            </Link>
                         </div>
                         <div className="side-about-link">
-                            <a href="/about">About</a>
+                            <Link to={'/about'}>About</Link>
                         </div>
                     </div>
                 </div>

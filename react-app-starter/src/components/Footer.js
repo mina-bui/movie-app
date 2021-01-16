@@ -2,8 +2,8 @@
 
 function Footer() {
 
-    const d = new Date();
-    const year = d.getFullYear();
+  const d = new Date();
+  const year = d.getFullYear();
 
   return (
     <footer>

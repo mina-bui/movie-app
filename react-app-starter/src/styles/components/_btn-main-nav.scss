@@ -49,6 +49,11 @@
     @media (min-width: em(600)){
         display: none;
     }
+    @media (min-width: $tablet) {
+        .line {
+            margin-left: auto;
+        }
+    }
 
 }
 
@@ -65,4 +70,3 @@
     clip-path: inset(50%);
     border: 0;
 }
-

@@ -128,23 +128,89 @@ header {
         font-weight: 700;
     }
 
-    @media (min-width: 500px) {
+    @media (min-width: 450px) {
+        // Popular Form------------------------------
+        // (ACTIVE STATE)
+        .form-popular {
+            width: 90px;
+        }
+        // Top Rated Form-----------------------------
+        // (NON-ACTIVE STATE)
+        .form-top-rated {
+            width: 90px;
+        }
+        // Upcoming Form------------------------------
+        // (NON-ACTIVE STATE)
+        .form-upcoming {
+            width: 90px;
+        }
+        // Now Playing Form----------------------------
+        // (NON-ACTIVE STATE)
+        .form-now-playing {
+            width: 90px;
+        }
         
     }
 
-    
-    @include mq(em(600)) {
-        /*
-        .header-row-01 {
-            padding: em(20);
-        }
-        */
+    @media (min-width: 500px) {
         .header-form-select {
-            margin-right: 50px;
-            margin-left: 50px;
+            margin-right: 20px;
+            margin-left: 20px;
         }
-        
+        // Popular Form------------------------------
+        // (ACTIVE STATE)
+        .form-popular {
+            width: 100px;
+        }
+        // Top Rated Form-----------------------------
+        // (NON-ACTIVE STATE)
+        .form-top-rated {
+            width: 100px;
+        }
+        // Upcoming Form------------------------------
+        // (NON-ACTIVE STATE)
+        .form-upcoming {
+            width: 100px;
+        }
+        // Now Playing Form----------------------------
+        // (NON-ACTIVE STATE)
+        .form-now-playing {
+            width: 100px;
+        }
     }
-    
+
+    @media (min-width: 600px) {
+        .header-form-select {
+            margin-right: 28px;
+            margin-left: 28px;
+        }
+        // Popular Form------------------------------
+        // (ACTIVE STATE)
+        .form-popular {
+            width: 120px;
+        }
+        // Top Rated Form-----------------------------
+        // (NON-ACTIVE STATE)
+        .form-top-rated {
+            width: 120px;
+        }
+        // Upcoming Form------------------------------
+        // (NON-ACTIVE STATE)
+        .form-upcoming {
+            width: 120px;
+        }
+        // Now Playing Form----------------------------
+        // (NON-ACTIVE STATE)
+        .form-now-playing {
+            width: 120px;
+        }
+    }
+
+    @media (min-width: 700px) {
+        .header-form-select {
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+    }
 
 }

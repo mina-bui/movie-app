@@ -23,8 +23,13 @@ footer {
     text-align: center;
     bottom: 0px;
     margin-left: 200px;
-}
 
-footer p {
-    font-size: 0.9em;
+    p {
+        font-size: 0.9em;
+    }
+
+    .social img {
+        width: 50px;
+        padding: 10px;
+    }
 }

@@ -5,19 +5,80 @@
     background-color: $darkTeal;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    padding: 10px;
 
     .show & {
         transform: translateX(0);
     }
 
-    /*     img {
-        width: 100px;
-    } */
+    img {
+        width: 200px;
+    }
+    .side-logo-button {
+        background-color: $lilac;
+        padding: 25px;
+    }
+    /* Search */
+    .side-menu-search {
+        display: none;
+    }
+    /* Side Menu Nav */
+    .side-menu-nav {
+        padding: 25px;
+    }
+    .side-home-logo,
+    .side-favourites-logo,
+    .side-about-logo {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .side-home-logo {
+        grid-area: home;
+    }
+    .side-favourites-logo {
+        grid-area: favourites;
+    }
+    .side-about-logo {
+        grid-area: about;
+    }
+    /* Navigation Names */
+    .side-home-name,
+    .side-favourites-name,
+    .side-about-name {
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    .side-home-name {
+        grid-area: home-name;
+    }
+    .side-favourites-name {
+        grid-area: favourites-name;
+    }
+    .side-about-name {
+        grid-area: about-name;
+    }
+    /* Grids for Each Row */
+    .side-home-button {
+        display: grid;
+        grid-template-areas: "home home-name";
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    .side-favourites-button {
+        display: grid;
+        grid-template-areas: "favourites favourites-name";
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    .side-about-button {
+        display: grid;
+        grid-template-areas: "about about-name";
+        justify-content: space-between;
+        margin-top: 25px;
+    }
 
     @media (min-width: $tablet) {
         transform: initial;
@@ -28,53 +89,27 @@
         }
         padding: 0px;
 
-        /* Individual Grid Items */
+        /* Logo */
         .side-logo-button {
             background-color: $darkLilac;
             padding: 25px;
         }
+
+        /* Search */
         .side-menu-search {
+            display: block;
             background-color: $lilac;
-            padding: 5px 25px 7px 25px;
+            padding: 5px 25px 5px 25px;
         }
-        .side-menu-nav {
-            padding: 25px;
-        }
-        /* Navigation Logos */
         .side-menu-search-icon {
             width: 35px;
         }
-        .side-home-logo,
-        .side-favourites-logo,
-        .side-about-logo {
-            width: 20px;
-            margin-right: 10px;
+
+        /* Side Menu Nav */
+        .side-menu-nav {
+            padding: 25px;
         }
-        .side-home-logo {
-            grid-area: home;
-        }
-        .side-favourites-logo {
-            grid-area: favourites;
-        }
-        .side-about-logo {
-            grid-area: about;
-        }
-        /* Navigation Names */
-        .side-home-name,
-        .side-favourites-name,
-        .side-about-name {
-            text-transform: uppercase;
-            font-size: 1em;
-        }
-        .side-home-name {
-            grid-area: home-name;
-        }
-        .side-favourites-name {
-            grid-area: favourites-name;
-        }
-        .side-about-name {
-            grid-area: about-name;
-        }
+
         /* Grids for Each Row */
         .side-home-button {
             display: grid;

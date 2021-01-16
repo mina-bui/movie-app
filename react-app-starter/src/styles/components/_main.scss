@@ -5,7 +5,7 @@ main {
     font-family: $regularFont;
     overflow: hidden;
     position: relative;
-    @media (min-width: $tablet){
+    @media (min-width: $tablet) {
         position: static;
     }
 }
@@ -13,19 +13,19 @@ main {
 // ===========================================================================
 // About Page - Mobile Version
 
-.about-main {
+.about-section {
     padding: 5px 25px 100px 25px;
 }
-.about-main p {
+.about-section p {
     text-align: center;
     color: $lilac;
 }
-.about-main p:nth-child(4) {
+.about-section p:nth-child(4) {
     color: $green;
     font-style: italic;
     padding-top: 250px;
 }
-.about-main h2 {
+.about-section h2 {
     text-align: center;
     padding: 20px 0px 40px 0px;
 }
@@ -33,13 +33,13 @@ main {
 // ===========================================================================
 // Favourites Page - Mobile Version
 
-.favourite-main {
+.favourite-section {
     padding: 5px 25px 50px 25px;
 }
-.favourite-main p {
+.favourite-section p {
     color: $lilac;
 }
-.favourite-main h2 {
+.favourite-section h2 {
     text-align: center;
     padding: 20px 0px 0px 0px;
 }
@@ -52,7 +52,7 @@ main {
     padding: 15px;
     margin: 0px;
 }
-.favourite-main p img {
+.favourite-section p img {
     height: 20px;
     width: 20px;
     margin: 0px 10px;
@@ -113,9 +113,6 @@ figure {
     width: 45px;
     height: 45px;
     text-align: center;
-   
-
-
 }
 .movie-runtime {
     grid-area: movie-runtime;
@@ -124,8 +121,8 @@ figure {
 }
 
 .movie-container {
-   // display: grid;
-   max-width: 247px;
+    // display: grid;
+    max-width: 247px;
     margin: 25px;
     /*grid-template-areas:
         "movie-poster   movie-poster"
@@ -271,7 +268,7 @@ figure {
 
     // =======================================================================
     // About Page - Desktop Version
-    .about-main p:nth-child(5) {
+    .about-section p:nth-child(5) {
         padding-top: 150px;
     }
 

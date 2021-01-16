@@ -212,14 +212,14 @@ figure {
         "tab-info";
 }
 
-.singlemovie-main {
+.single-movie-section {
     padding: 20px 50px 50px 50px;
 }
-.singlemovie-main div h2 {
+.single-movie-section div h2 {
     font-size: 1.75em;
     padding: 0px 0px 0px 0px;
 }
-.singlemovie-main div h3 {
+.single-movie-section div h3 {
     font-size: 1.5em;
     font-weight: 400;
     padding: 15px 0px 15px 0px;
@@ -228,14 +228,14 @@ figure {
     color: $green;
     text-transform: uppercase;
 }
-.singlemovie-main span {
+.single-movie-section span {
     color: $bodyFont;
     font-size: 0.8em;
     padding: 10px 5px 10px 5px;
     margin: 35px;
     border: 3px solid $green;
 }
-.singlemovie-main div p {
+.single-movie-section div p {
     font-size: 1em;
     line-height: 1.75;
 }
@@ -390,7 +390,7 @@ figure {
         font-size: 1.2em;
         text-transform: uppercase;
     }
-    .singlemovie-main div h2 {
+    .single-movie-section div h2 {
         font-size: 2.3em;
     }
     .singlemovie-rating {

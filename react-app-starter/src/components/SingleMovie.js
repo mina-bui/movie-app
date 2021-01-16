@@ -3,9 +3,7 @@
 function SingleMovie() {
   return (
 
-
-
-
+    <section class="single-movie-section">
       <section class="grid-container">
 
         <div class="title-desc">
@@ -53,7 +51,7 @@ function SingleMovie() {
         </div>
 
       </section>
-
+    </section>
   );
 }
 

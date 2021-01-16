@@ -4,6 +4,7 @@ header {
     background-color: $darkLilac;
     height: 140px;
     //width: 100px;
+   
 
     a {
         text-transform: uppercase;
@@ -40,9 +41,6 @@ header {
         }
     }
 
-    .header-row-nav {
-        //display: none;
-    }
 
     // ==============================================================================================
     // Top Portion of Header (Styling for Form Select)
@@ -128,6 +126,10 @@ header {
         font-family: $boldFont;
         font-size: 0.55em;
         font-weight: 700;
+    }
+
+    @media (min-width: 500px) {
+        
     }
 
     

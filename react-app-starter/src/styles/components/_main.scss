@@ -5,6 +5,7 @@ main {
     font-family: $regularFont;
     overflow: hidden;
     position: relative;
+    z-index:9999;
     @media (min-width: $tablet) {
         position: static;
     }

@@ -31,7 +31,9 @@ function MainNavigation() {
                             </Link>
                         </div>
                         <Link to={'/'}>
-                            Home
+                            <div className="side-home-name">
+                                Home
+                            </div>
                         </Link>
                     </div>
 
@@ -42,7 +44,12 @@ function MainNavigation() {
                             </Link>
                         </div>
                         <div className="side-favourites-link">
-                            <Link to={'/favourites'}>Favourites</Link>
+
+                            <Link to={'/favourites'}>
+                                <div className="side-favourites-name">
+                                    Favourites
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -53,7 +60,11 @@ function MainNavigation() {
                             </Link>
                         </div>
                         <div className="side-about-link">
-                            <Link to={'/about'}>About</Link>
+                            <Link to={'/about'}>
+                                <div className="side-about-name">
+                                    About
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

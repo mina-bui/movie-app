@@ -20,7 +20,7 @@ main {
     text-align: center;
     color: $lilac;
 }
-.about-section p:nth-child(4) {
+.about-section p:nth-child(5) {
     color: $green;
     font-style: italic;
     padding: 250px 0px 0px 0px;
@@ -28,6 +28,10 @@ main {
 .about-section h2 {
     text-align: center;
     padding: 20px 0px 40px 0px;
+}
+.about-section div {
+    text-align: center;
+    margin: 100px 0px 0px 0px;
 }
 
 // ===========================================================================
@@ -74,10 +78,7 @@ figure {
     height: auto;
     width: 100%;
 }
-.movie-poster a:hover {
-    border-bottom: none;
-    border-bottom: 2px solid $green;
-}
+
 .movie-title {
     grid-area: movie-title;
     font-weight: 700;
@@ -89,8 +90,7 @@ figure {
     color: $bodyFont;
 }
 .movie-title a:hover {
-    color: $bodyFont;
-    border-bottom: 2px solid $bodyFont;
+    color: white;
 }
 .movie-genre {
     grid-area: movie-genre;

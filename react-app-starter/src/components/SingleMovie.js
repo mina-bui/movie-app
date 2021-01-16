@@ -16,7 +16,7 @@ function SingleMovie() {
         <div class="poster">
           <img src="https://www.insidethekraken.com/wp-content/uploads/2018/10/Memories-of-Murder-poster.jpg"></img>
           <p>
-            <img src="../assets/images/play_icon.png" class="play_icon"></img>
+            <img src="/../assets/images/play_icon.png" class="play_icon"></img>
             <a href="#0">Watch Trailer</a>
           </p>
         </div>
@@ -27,7 +27,7 @@ function SingleMovie() {
 
         <div class="fave">
           <p>
-            <img src="../assets/images/favourite_icon.png" class="favourite_icon"></img>
+            <img src="/../assets/images/favourite_icon.png" class="favourite_icon"></img>
             <a href="#0">Add / Remove Favorites</a>
           </p>
         </div>

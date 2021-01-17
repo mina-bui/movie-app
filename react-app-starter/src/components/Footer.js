@@ -8,7 +8,6 @@ function Footer() {
   return (
     <footer>
       <div className="footer-grid">
-
         <div className="contact">
           <h3>Get in Touch</h3>
         </div>
@@ -34,9 +33,6 @@ function Footer() {
           <h5>Address</h5>
           <p>555 Seymour Street<br></br>Vancouver, BC<br></br>V6B 3HP</p>
         </div>
-
-        <div className="empty"></div>
-
       </div>
 
       <div className="copyright">

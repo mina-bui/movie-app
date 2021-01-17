@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function About() {
   return (
 
-    <section class="about-section">
+    <section className="about-section">
       <Link to={'/'} className="go-back">&#5176; Back</Link>
       <h2>About MoviesGo</h2>
       <p>
@@ -19,7 +19,7 @@ function About() {
       </p>
       <div>
         <a href="https://www.themoviedb.org/documentation/api">
-          <img src="/../assets/images/tmdb-logo.png" class="no-hover"></img>
+          <img src="/../assets/images/tmdb-logo.png" className="no-hover"></img>
         </a>
       </div>
       <p>

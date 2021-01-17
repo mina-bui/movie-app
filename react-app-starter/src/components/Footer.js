@@ -7,12 +7,12 @@ function Footer() {
 
   return (
     <footer>
-      <div class="footer-grid">
-        <div class="contact">
+      <div className="footer-grid">
+        <div className="contact">
           <h3>Get in Touch</h3>
 
         </div>
-        <div class="contact-info">
+        <div className="contact-info">
           <h5>Email</h5>
           <p>
             mbui14@my.bcit.ca
@@ -20,7 +20,7 @@ function Footer() {
             (604)-412-7773
           </p>
         </div>
-        <div class="social">
+        <div className="social">
           <h5>Social Media</h5>
 
           <a href="www.instagram.com">
@@ -36,10 +36,10 @@ function Footer() {
           </a>
 
         </div>
-        <div class="location">
+        <div className="location">
           <h3>Where We Are</h3>
         </div>
-        <div class="address">
+        <div className="address">
           <h5>Address</h5>
           <p>
             555 Seymour Street
@@ -49,9 +49,9 @@ function Footer() {
             V6B 3H6
           </p>
         </div>
-        <div class="empty"></div>
+        <div className="empty"></div>
       </div>
-      <div class="copyright">
+      <div className="copyright">
         <p>&copy; {year} Movie Corp.</p>
       </div>
     </footer>

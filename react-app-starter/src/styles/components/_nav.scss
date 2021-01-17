@@ -89,6 +89,7 @@
     }
 
     @media (min-width: $tablet) {
+        position: fixed;
         transform: initial;
         width: 200px;
         height: 100vh;

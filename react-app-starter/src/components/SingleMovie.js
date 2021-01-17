@@ -5,7 +5,6 @@ function SingleMovie() {
 
     <section className="single-movie-section">
       <section className="grid-container">
-
         <div className="title-desc">
           <h2>Memories of Murder</h2>
           <p>Release Date: 10/19/2020</p>
@@ -15,10 +14,7 @@ function SingleMovie() {
 
         <div className="poster">
           <img src="https://www.insidethekraken.com/wp-content/uploads/2018/10/Memories-of-Murder-poster.jpg"></img>
-          <p>
-            <img src="/../assets/images/play_icon.png" className="play_icon"></img>
-            <a href="#0">Watch Trailer</a>
-          </p>
+          <p><img src="/../assets/images/play_icon.png" className="play_icon"></img><a href="#0">Watch Trailer</a></p>
         </div>
 
         <div className="rating">
@@ -26,10 +22,7 @@ function SingleMovie() {
         </div>
 
         <div className="fave">
-          <p>
-            <img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img>
-            <a href="#0">Add / Remove Favorites</a>
-          </p>
+          <p><img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img><a href="#0">Add / Remove Favorites</a></p>
         </div>
 
         <div className="overview">
@@ -45,11 +38,8 @@ function SingleMovie() {
         </div>
 
         <div className="tab-info">
-          <p>
-            In 1986, Park (Song Kang-ho) and Cho (Kim Roi-ha) are two simple-minded detectives assigned to a double murder investigation in a South Korean province. But when the murderer strikes several more times with the same pattern, the detectives realize that they are chasing the country's first documented serial killer. Relying on only their basic skills and tools, Park and Jo attempt to piece together the clues and solve the case in this thriller based on true events.
-          </p>
+          <p>In 1986, Park (Song Kang-ho) and Cho (Kim Roi-ha) are two simple-minded detectives assigned to a double murder investigation in a South Korean province. But when the murderer strikes several more times with the same pattern, the detectives realize that they are chasing the country's first documented serial killer. Relying on only their basic skills and tools, Park and Jo attempt to piece together the clues and solve the case in this thriller based on true events.</p>
         </div>
-
       </section>
     </section>
   );

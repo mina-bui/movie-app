@@ -2,8 +2,6 @@
 
 function Favourites() {
   return (
-
-
     <section className="favourite-section">
 
       <h2>Favourites</h2>
@@ -14,24 +12,12 @@ function Favourites() {
         <img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img>
       </div>
 
-      <p>
-        Uh-oh, looks like you haven't chosen any movies yet!
-        </p>
-      <p>
-        Feel free to return back to the home page and explore more movies!
-        </p>
-      <p>
-        To add a favourite movie on the home page, you can click on the
-          <img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img>
-           while hovering or by clicking on the movie poster.
-        </p>
-      <p>
-        You can also find the
-          <img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img>
-           when you click on an individual movie to learn more or watch a trailer.
-        </p>
-    </section>
+      <p>Uh-oh, looks like you haven't chosen any movies yet!</p>
+      <p>Feel free to return back to the home page and explore more movies!</p>
+      <p>To add a favourite movie on the home page, you can click on the <img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img> while hovering or by clicking on the movie poster.</p>
+      <p>You can also find the <img src="/../assets/images/favourite_icon.png" className="favourite_icon"></img> when you click on an individual movie to learn more or watch a trailer.</p>
 
+    </section>
   );
 }
 

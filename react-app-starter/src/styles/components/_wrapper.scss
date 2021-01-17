@@ -9,7 +9,6 @@
     main {
         flex: 1;
     }
-    //@include mc;
 
     @media (min-width: $tablet) {
         display: grid;

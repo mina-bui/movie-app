@@ -1,10 +1,8 @@
 // Header Stylization
 header {
-    // General Header Styling 
+    // General Header Styling
     background-color: $darkLilac;
     height: 140px;
-    
-   
 
     a {
         text-transform: uppercase;
@@ -16,7 +14,7 @@ header {
     .header-row-01 {
         display: flex;
 
-        // Header Logo 
+        // Header Logo
         .header-logo {
             width: 180px;
             margin-top: 24px;
@@ -40,7 +38,6 @@ header {
             margin-top: 27px;
         }
     }
-
 
     // ==============================================================================================
     // Top Portion of Header (Styling for Form Select)
@@ -66,12 +63,11 @@ header {
     }
     .form-popular a {
         color: $darkIndigo;
-        //text-decoration: none;
         font-family: $boldFont;
         font-size: 0.59em;
         font-weight: 700;
     }
-    
+
     // Top Rated Form-----------------------------
     // (NON-ACTIVE STATE)
     .form-top-rated {
@@ -149,7 +145,6 @@ header {
         .form-now-playing {
             width: 90px;
         }
-        
     }
 
     @media (min-width: 500px) {
@@ -217,5 +212,4 @@ header {
         position: absolute;
         transform: translateY(-100%);
     }
-
 }

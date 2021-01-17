@@ -4,7 +4,6 @@ body {
     background-color: $darkIndigo;
     color: $bodyFont;
     font-family: $regularFont;
-    
 }
 p {
     color: $bodyFont;
@@ -30,7 +29,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: white;
+    color: $lilac;
 }
 
 // ===========================================================================

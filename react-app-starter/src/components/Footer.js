@@ -40,7 +40,7 @@ function Footer() {
       </div>
 
       <div className="copyright">
-        <p>&copy; {year} Movie Corp.</p>
+        <p>&copy; {year} Filmdex</p>
       </div>
 
     </footer>

@@ -2,7 +2,9 @@
 header {
     // General Header Styling 
     background-color: $darkLilac;
-    height: 140px;   
+    height: 140px;
+    
+   
 
     a {
         text-transform: uppercase;
@@ -208,6 +210,11 @@ header {
             margin-right: 40px;
             margin-left: 40px;
         }
+    }
+
+    @media (min-width: $tablet) {
+        position: absolute;
+        transform: translateY(-100%);
     }
 
 }

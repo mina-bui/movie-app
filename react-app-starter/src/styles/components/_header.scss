@@ -2,9 +2,7 @@
 header {
     // General Header Styling 
     background-color: $darkLilac;
-    height: 140px;
-    //width: 100px;
-   
+    height: 140px;   
 
     a {
         text-transform: uppercase;
@@ -66,7 +64,6 @@ header {
     }
     .form-popular a {
         color: $darkIndigo;
-        //text-decoration: none;
         font-family: $boldFont;
         font-size: 0.59em;
         font-weight: 700;

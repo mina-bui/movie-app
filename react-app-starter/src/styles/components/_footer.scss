@@ -1,24 +1,5 @@
 // Footer
 
-/*
-footer {
-    padding: $section-padding;
-    background-color: $darkBlue;
-    p {
-        &:first-child {
-            margin-top: 0;
-        }
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    a {
-        color: $light;
-    }
-}
-
-*/
-
 footer {
     text-align: center;
     bottom: 0px;
@@ -89,7 +70,7 @@ footer {
             justify-content: center;
             grid-template-areas:
                 "contact        empty     location"
-                "contact-info   social      address";
+                "contact-info   social    address";
         }
     }
 }

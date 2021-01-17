@@ -5,7 +5,7 @@ main {
     font-family: $regularFont;
     overflow: hidden;
     position: relative;
-    z-index:9999;
+    z-index: 9999;
     @media (min-width: $tablet) {
         position: static;
     }
@@ -127,7 +127,6 @@ figure {
     font-size: 0.9em;
     color: $bodyFont;
     padding: 10px 5px;
-    //margin-left: auto;
     margin: 0px 10px 0px 0px;
     border: 3px solid $green;
     width: 45px;
@@ -137,17 +136,10 @@ figure {
 .movie-runtime {
     grid-area: movie-runtime;
     font-size: 0.8em;
-    //margin-left: auto;
 }
 .movie-container {
-    // display: grid;
     max-width: 247px;
     margin: 25px;
-    /*grid-template-areas:
-        "movie-poster   movie-poster"
-        "movie-title    movie-rating"
-        "movie-genre    movie-rating"
-        "movie-date     movie-runtime";*/
 }
 .movie-info {
     display: flex;

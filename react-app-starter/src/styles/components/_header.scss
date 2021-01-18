@@ -2,7 +2,11 @@
 header {
     // General Header Styling
     background-color: $darkLilac;
-    height: 140px;
+    height: 230px;
+    /* MAKE HEADER STAY FIXED TO TOP OF THE SCREEN
+    position: fixed;
+    z-index: 100000;
+    */
 
     a {
         text-transform: uppercase;
@@ -10,9 +14,11 @@ header {
     }
 
     // ==============================================================================================
-    // Top Portion of Header
+    // Top Portion of Header (Logo Button / Search Bar)
+    // (Mobile Layout - Starting from baseline of 300px screen width)
     .header-row-01 {
         display: flex;
+        flex-wrap: wrap;
 
         // Header Logo
         .header-logo {
@@ -21,194 +27,200 @@ header {
             margin-left: 20px;
             margin-bottom: 0px;
         }
+
         // Search Bar
         .search-bar {
             background-color: $lilac;
             border-radius: 25px;
             height: 25px;
-            width: 150px;
-            margin-left: 25px;
-            margin-top: 35px;
+            width: 72%;
+            margin-top: 20px;
+            margin-left: 7%;
         }
+
         // Search Bar Icon
         .search-bar-icon {
             width: 52px;
             height: 52px;
-            margin-left: 0px;
-            margin-top: 27px;
+            margin-top: 13px;
         }
     }
 
     // ==============================================================================================
-    // Top Portion of Header (Styling for Form Select)
+    // Bottom Portion of Header (Styling for Form Select)
     .header-form-select {
         list-style: none;
         display: flex;
-        justify-content: space-between;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 0px;
 
-    // Popular Form------------------------------
-    // (ACTIVE STATE)
-    .form-popular {
-        background-color: $green;
-        color: $darkIndigo;
-        border-radius: 25px;
-        width: 75px;
-        height: 30px;
-        text-align: center;
-        padding-top: 3px;
-    }
-    .form-popular a {
-        color: $darkIndigo;
-        font-family: $boldFont;
-        font-size: 0.59em;
-        font-weight: 700;
-    }
-
-    // Top Rated Form-----------------------------
-    // (NON-ACTIVE STATE)
-    .form-top-rated {
-        border-style: solid;
-        border-color: $green;
-        border-width: 3px;
-        border-radius: 25px;
-        width: 75px;
-        height: 30px;
-        text-align: center;
-    }
-    .form-top-rated a {
-        color: $green;
-        font-family: $boldFont;
-        font-size: 0.59em;
-        font-weight: 700;
-    }
-
-    // Upcoming Form------------------------------
-    // (NON-ACTIVE STATE)
-    .form-upcoming {
-        border-style: solid;
-        border-color: $green;
-        border-width: 3px;
-        border-radius: 25px;
-        width: 75px;
-        height: 30px;
-        text-align: center;
-    }
-    .form-upcoming a {
-        color: $green;
-        text-decoration: none;
-        font-family: $boldFont;
-        font-size: 0.59em;
-        font-weight: 700;
-    }
-
-    // Now Playing Form----------------------------
-    // (NON-ACTIVE STATE)
-    .form-now-playing {
-        border-style: solid;
-        border-color: $green;
-        border-width: 3px;
-        border-radius: 25px;
-        width: 75px;
-        height: 30px;
-        text-align: center;
-    }
-    .form-now-playing a {
-        color: $green;
-        text-decoration: none;
-        font-family: $boldFont;
-        font-size: 0.55em;
-        font-weight: 700;
-    }
-
-    @media (min-width: 450px) {
         // Popular Form------------------------------
         // (ACTIVE STATE)
         .form-popular {
-            width: 90px;
+            background-color: $green;
+            color: $darkIndigo;
+            border-radius: 25px;
+            width: 47%;
+            height: 30px;
+            text-align: center;
+            padding-top: 2px;
+            //margin-right: 1%;
         }
+        .form-popular a {
+            color: $darkIndigo;
+            font-family: $boldFont;
+            font-size: 0.59em;
+            font-weight: 700;
+        }
+
         // Top Rated Form-----------------------------
         // (NON-ACTIVE STATE)
         .form-top-rated {
-            width: 90px;
+            border-style: solid;
+            border-color: $green;
+            border-width: 3px;
+            border-radius: 25px;
+            width: 47%;
+            height: 30px;
+            text-align: center;
         }
+        .form-top-rated a {
+            color: $green;
+            font-family: $boldFont;
+            font-size: 0.59em;
+            font-weight: 700;
+        }
+
         // Upcoming Form------------------------------
         // (NON-ACTIVE STATE)
         .form-upcoming {
-            width: 90px;
+            margin-top: 13px;
+            border-style: solid;
+            border-color: $green;
+            border-width: 3px;
+            border-radius: 25px;
+            width: 47%;
+            height: 30px;
+            text-align: center;
         }
+        .form-upcoming a {
+            color: $green;
+            text-decoration: none;
+            font-family: $boldFont;
+            font-size: 0.59em;
+            font-weight: 700;
+        }
+
         // Now Playing Form----------------------------
         // (NON-ACTIVE STATE)
         .form-now-playing {
-            width: 90px;
+            margin-top: 13px;
+            border-style: solid;
+            border-color: $green;
+            border-width: 3px;
+            border-radius: 25px;
+            width: 47%;
+            height: 30px;
+            text-align: center;
+        }
+        .form-now-playing a {
+            color: $green;
+            text-decoration: none;
+            font-family: $boldFont;
+            font-size: 0.55em;
+            font-weight: 700;
         }
     }
+
 
     @media (min-width: 500px) {
+        height: 150px;
+        //Top Portion of Header-------------------
+        .header-row-01 {
+            // Search Bar
+            .search-bar {
+                width: 30%;
+                margin-top: 35px;
+                margin-left: 20px;
+            }
+            // Search Bar Icon
+            .search-bar-icon {
+                width: 52px;
+                height: 52px;
+                margin-top: 29px;
+                margin-right: 20px;
+            }
+        }
+
+        //Bottom Portion of Header-------------------
         .header-form-select {
-            margin-right: 20px;
-            margin-left: 20px;
+            margin-top: 15px;
+            margin-left: 3%;
+            margin-right:3%;
+
+            .form-popular {
+                width: 24%;
+                margin-right: 1%;
+            }
+    
+            .form-top-rated {
+                width: 24%;
+            }
+    
+            .form-upcoming {
+                margin-top: 0px;
+                width: 24%;
+            }
+    
+            .form-now-playing {
+                margin-top: 0px;
+                width: 24%;
+            }
+
         }
-        // Popular Form------------------------------
-        // (ACTIVE STATE)
-        .form-popular {
-            width: 100px;
+    }
+
+    @media (min-width: 550px) {
+        //Top Portion of Header-------------------
+        .header-row-01 {
+            // Search Bar
+            .search-bar {
+                width: 35%;
+              
+            }
         }
-        // Top Rated Form-----------------------------
-        // (NON-ACTIVE STATE)
-        .form-top-rated {
-            width: 100px;
-        }
-        // Upcoming Form------------------------------
-        // (NON-ACTIVE STATE)
-        .form-upcoming {
-            width: 100px;
-        }
-        // Now Playing Form----------------------------
-        // (NON-ACTIVE STATE)
-        .form-now-playing {
-            width: 100px;
-        }
+        
     }
 
     @media (min-width: 600px) {
-        .header-form-select {
-            margin-right: 28px;
-            margin-left: 28px;
+        //Top Portion of Header-------------------
+        .header-row-01 {
+            // Search Bar
+            .search-bar {
+                width: 39%;
+              
+            }
         }
-        // Popular Form------------------------------
-        // (ACTIVE STATE)
-        .form-popular {
-            width: 120px;
-        }
-        // Top Rated Form-----------------------------
-        // (NON-ACTIVE STATE)
-        .form-top-rated {
-            width: 120px;
-        }
-        // Upcoming Form------------------------------
-        // (NON-ACTIVE STATE)
-        .form-upcoming {
-            width: 120px;
-        }
-        // Now Playing Form----------------------------
-        // (NON-ACTIVE STATE)
-        .form-now-playing {
-            width: 120px;
-        }
+        
     }
 
-    @media (min-width: 700px) {
-        .header-form-select {
-            margin-right: 40px;
-            margin-left: 40px;
+    @media (min-width: 750px) {
+        //Top Portion of Header-------------------
+        .header-row-01 {
+            // Search Bar
+            .search-bar {
+                width: 45%;
+              
+            }
         }
+        
     }
 
     @media (min-width: $tablet) {
+        //$tablet: 768px
         position: absolute;
         transform: translateY(-100%);
     }

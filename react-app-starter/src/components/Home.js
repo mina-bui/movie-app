@@ -2,7 +2,7 @@
 
 function Home() {
 	return (
-		<section>
+		<section className="home-desktop"> 
 			<div className="desktop-movie-grid">
 
 				<div className="movies movie-01">

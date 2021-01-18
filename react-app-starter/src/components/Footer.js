@@ -7,6 +7,7 @@ function Footer() {
 
   return (
     <footer>
+      <hr></hr>
       <div className="footer-grid">
         <div className="contact">
           <h3>Get in Touch</h3>

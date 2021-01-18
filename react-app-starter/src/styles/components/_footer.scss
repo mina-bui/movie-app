@@ -4,6 +4,14 @@ footer {
     text-align: center;
     bottom: 0px;
 
+    hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, $darkIndigo, $darkBlue, $darkIndigo);
+        margin: 25px 0px 75px 0px;
+    }
+
     p {
         font-size: 0.9em;
         color: $lilac;
@@ -33,6 +41,9 @@ footer {
         text-align: left;
         margin-left: 200px;
 
+        hr {
+            margin: 50px 0px 50px 0px;
+        }
         .copyright {
             text-align: center;
             margin: 0px 0px 0px 0px;
@@ -72,6 +83,17 @@ footer {
             grid-template-areas:
                 "contact        contact     location"
                 "contact-info   social    address";
+        }
+    }
+    @media only screen and (min-width: $mobile) and (max-width: $desktop) {
+        hr {
+            margin: 0px 0px 100px 0px;
+        }
+        .footer-grid {
+            margin: 0px;
+        }
+        .social {
+            margin: 0px 25px 0px 25px;
         }
     }
 }

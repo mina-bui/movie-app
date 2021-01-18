@@ -265,6 +265,7 @@ header {
         
     }
 
+
     @media (min-width: $tablet) {
         //$tablet: 768px
         position: relative;
@@ -274,10 +275,18 @@ header {
         .second-form-select {
             transform: translateY(340%);
             display: flex;
-        justify-content: space-evenly;
-        margin:auto;
-        padding-left: 20%;
-        padding-right: 20%;
+            justify-content: space-evenly;
+            margin:auto;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    @media (min-width: 900px) {
+        //Bottom Portion of Header-------------------
+        .second-form-select {
+            padding-left: 20%;
+            padding-right: 20%;
         }
     }
 }

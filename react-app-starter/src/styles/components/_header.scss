@@ -2,11 +2,12 @@
 header {
     // General Header Styling
     background-color: $darkLilac;
-    height: 230px;
+    //height: 230px;
     /* MAKE HEADER STAY FIXED TO TOP OF THE SCREEN
     position: fixed;
     z-index: 100000;
     */
+    padding-bottom: 25px;
 
     a {
         text-transform: uppercase;
@@ -192,7 +193,6 @@ header {
     }
 
     @media (min-width: 500px) {
-        height: 150px;
         //Top Portion of Header-------------------
         .header-row-01 {
             // Search Bar

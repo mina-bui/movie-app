@@ -48,6 +48,7 @@ header {
 
     // ==============================================================================================
     // Bottom Portion of Header (Styling for Form Select)
+    // First Form Select------------------------------------------
     .header-form-select {
         list-style: none;
         display: flex;
@@ -134,7 +135,61 @@ header {
             font-weight: 700;
         }
     }
+    // Second Form Select------------------------------------------
+    .second-form-select {
+        display: none;
+        //transform: translateY(-300%);
+       
 
+        .vertical-heading {
+            border-left: 2.5px solid $green; 
+        }
+
+         // Second Popular Form----------------------------
+        .second-popular {
+           
+        }
+        .second-popular a {
+            font-family: $boldFont;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        // Second Top Rated Form----------------------------
+        .second-top-rated {
+            
+        }
+
+        .second-top-rated a {
+            color: $lilac;
+            font-family: $boldFont;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+
+        // Second Upcoming Form----------------------------
+        .second-upcoming {
+            
+        }
+        .second-upcoming a {
+            color: $lilac;
+            font-family: $boldFont;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        // Second Now Playing Form----------------------------
+        .second-now-playing {
+            
+        }
+        .second-now-playing a {
+            color: $lilac;
+            font-family: $boldFont;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+    }
 
     @media (min-width: 500px) {
         height: 150px;
@@ -165,21 +220,17 @@ header {
                 width: 24%;
                 margin-right: 1%;
             }
-    
             .form-top-rated {
                 width: 24%;
             }
-    
             .form-upcoming {
                 margin-top: 0px;
                 width: 24%;
             }
-    
             .form-now-playing {
                 margin-top: 0px;
                 width: 24%;
             }
-
         }
     }
 
@@ -189,10 +240,8 @@ header {
             // Search Bar
             .search-bar {
                 width: 35%;
-              
             }
         }
-        
     }
 
     @media (min-width: 600px) {
@@ -201,10 +250,8 @@ header {
             // Search Bar
             .search-bar {
                 width: 39%;
-              
             }
         }
-        
     }
 
     @media (min-width: 750px) {
@@ -213,7 +260,6 @@ header {
             // Search Bar
             .search-bar {
                 width: 45%;
-              
             }
         }
         
@@ -221,7 +267,17 @@ header {
 
     @media (min-width: $tablet) {
         //$tablet: 768px
-        position: absolute;
+        position: relative;
         transform: translateY(-100%);
+
+        //Bottom Portion of Header-------------------
+        .second-form-select {
+            transform: translateY(340%);
+            display: flex;
+        justify-content: space-evenly;
+        margin:auto;
+        padding-left: 20%;
+        padding-right: 20%;
+        }
     }
 }

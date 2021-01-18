@@ -3,6 +3,7 @@ body {
     background-color: $darkIndigo;
     color: $bodyFont;
     font-family: $regularFont;
+    font-weight: 400;
 }
 p {
     color: $bodyFont;
@@ -18,7 +19,7 @@ h6 {
     font-family: $regularFont;
     color: $green;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
 }
 h2 {
     font-size: 2em;
@@ -38,7 +39,7 @@ a:hover {
     color: $green;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
 }
 .go-back:active,
 .go-back:hover {

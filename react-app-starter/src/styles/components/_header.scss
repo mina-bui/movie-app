@@ -137,13 +137,8 @@ header {
     }
     // Second Form Select------------------------------------------
     .second-form-select {
-        // display: none;
-        transform: translateY(250%);
-        display: flex;
-        justify-content: space-evenly;
-        margin:auto;
-        padding-left: 20%;
-        padding-right: 20%;
+        display: none;
+        //transform: translateY(-300%);
        
 
         .vertical-heading {
@@ -276,6 +271,13 @@ header {
         transform: translateY(-100%);
 
         //Bottom Portion of Header-------------------
-        
+        .second-form-select {
+            transform: translateY(340%);
+            display: flex;
+        justify-content: space-evenly;
+        margin:auto;
+        padding-left: 20%;
+        padding-right: 20%;
+        }
     }
 }

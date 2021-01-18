@@ -1,8 +1,9 @@
 // Home
 
-function Home() {
+const Home = (props) => {
+
 	return (
-		<section className="home-desktop"> 
+		<section className="home-desktop">
 			<div className="desktop-movie-grid">
 
 				<div className="movies movie-01">
@@ -272,6 +273,10 @@ function Home() {
 			</div>
 		</section>
 	);
+}
+
+Home.defaultProps = {
+
 }
 
 export default Home;

@@ -9,15 +9,13 @@ const Header = ({ handleOpenNav }) => {
 	return (
 		<header>
 			<div className="header-row header-row-01">
-				<Link to={'/'}>
-					<img className="header-logo" src="/assets/images/database_logo_green.png" alt='Movie Database Logo' />
-				</Link>
+				<Link to={'/'}>=<img className="header-logo" src="/assets/images/database_logo_green.png" alt='Filmdex Logo' />=</Link>
 
 				<div className="search-bar"></div>
 				<div className="search-bar-icon">
-					<img src="/assets/images/search_icon.png" alt="Search Bar Icon"/>
+					<img src="/assets/images/search_icon.png" alt="Search Bar Icon" />
 				</div>
-		
+
 				<button className="btn-main-nav" onClick={handleOpenNav}>
 					<span className="hamburger-icon">
 						<span className="line"></span>
@@ -47,21 +45,21 @@ const Header = ({ handleOpenNav }) => {
 				<div className="second-popular">
 					<a href="#">Popular</a>
 				</div>
-					<div className="vertical-heading"></div>
+				<div className="vertical-heading"></div>
 				<div className="second-top-rated">
 					<a href="#">Top Rated</a>
 				</div>
-					<div className="vertical-heading"></div>
+				<div className="vertical-heading"></div>
 				<div className="second-upcoming">
 					<a href="#">Upcoming</a>
 				</div>
-					<div className="vertical-heading"></div>
+				<div className="vertical-heading"></div>
 				<div className="second-now-playing">
 					<a href="#">Now Playing</a>
 				</div>
 			</div>
-    	</header>
-  	);
+		</header>
+	);
 }
 
 export default Header;

@@ -1,6 +1,6 @@
 // Single Movie
 
-function SingleMovie() {
+const SingleMovie = () => {
 
   /*   function toggleOverview() {
       var OverviewInfo = document.getElementsByClassName("overview-info");

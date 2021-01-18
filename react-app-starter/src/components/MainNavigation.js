@@ -1,9 +1,8 @@
 // SideMenu
-import Nav from './Nav';
+//import Nav from './Nav';
 import { Link } from 'react-router-dom';
 
-
-function MainNavigation() {
+const MainNavigation = () => {
 
     return (
         <section className="main-navigation">

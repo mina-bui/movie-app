@@ -42,6 +42,24 @@ const Header = ({ handleOpenNav }) => {
 					<a href="#">Now Playing</a>
 				</div>
 			</div>
+
+			<div className="second-form-select">
+				<div className="second-popular">
+					<a href="#">Popular</a>
+				</div>
+					<div className="vertical-heading"></div>
+				<div className="second-top-rated">
+					<a href="#">Top Rated</a>
+				</div>
+					<div className="vertical-heading"></div>
+				<div className="second-upcoming">
+					<a href="#">Upcoming</a>
+				</div>
+					<div className="vertical-heading"></div>
+				<div className="second-now-playing">
+					<a href="#">Now Playing</a>
+				</div>
+			</div>
     	</header>
   	);
 }

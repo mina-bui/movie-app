@@ -18,9 +18,20 @@ footer {
         line-height: 1.5;
     }
 
-    .social img {
-        width: 50px;
-        padding: 10px;
+    .social {
+        .onhover {
+            display: none;
+        }
+        .surround:hover span.initial {
+            display: none;
+        }
+        .surround:hover span.onhover {
+            display: inline-block;
+        }
+        img {
+            width: 50px;
+            padding: 10px;
+        }
     }
 
     h3 {

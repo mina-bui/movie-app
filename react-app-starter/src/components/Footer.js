@@ -20,10 +20,30 @@ function Footer() {
 
         <div className="social">
           <h5>Social Media</h5>
-          <a href="www.instagram.com"><img src="/../assets/images/instagram-icon.png" id="instagram-icon"></img></a>
-          <a href="www.facebook.com"><img src="/../assets/images/facebook-icon.png" id="facebook-icon"></img></a>
-          <a href="www.twitter.com"><img src="/../assets/images/twitter-icon.png" id="twitter-icon"></img></a>
-
+          <span class="surround">
+            <span class="initial">
+              <a href="www.instagram.com"><img src="/../assets/images/instagram-icon.png" id="instagram-icon"></img></a>
+            </span>
+            <span class="onhover">
+              <a href="www.instagram.com"><img src="/../assets/images/darklilac-instagram-icon.png" id="darklilac-instagram-icon"></img></a>
+            </span>
+          </span>
+          <span class="surround">
+            <span class="initial">
+              <a href="www.facebook.com"><img src="/../assets/images/facebook-icon.png" id="facebook-icon"></img></a>
+            </span>
+            <span class="onhover">
+              <a href="www.facebook.com"><img src="/../assets/images/darklilac-facebook-icon.png" id="darklilac-facebook-icon"></img></a>
+            </span>
+          </span>
+          <span class="surround">
+            <span class="initial">
+              <a href="www.twitter.com"><img src="/../assets/images/twitter-icon.png" id="twitter-icon"></img></a>
+            </span>
+            <span class="onhover">
+              <a href="www.twitter.com"><img src="/../assets/images/darklilac-twitter-icon.png" id="darklilac-twitter-icon"></img></a>
+            </span>
+          </span>
         </div>
 
         <div className="location">
